@@ -5,3 +5,4 @@ import psutil
 import time
 
 track time
+cpu usage
