@@ -6,3 +6,7 @@ import time
 
 track time
 cpu usage
+memory usage
+network usage
+
+store and compare
