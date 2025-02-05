@@ -1,3 +1,7 @@
-what should I make?
+eficciency checker
 
--note taker/calander/planner
+dependecy
+import psutil
+import time
+
+track time
