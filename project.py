@@ -9,10 +9,10 @@ def pig_latin():
     sentance = input(":")
     direction = input("select: in/out")
 
-    if direction.lower in ["in"]:
+    if "in" in direction.lower:
         translate_in(sentance)
 
-    elif direction.lower in ["out"]:
+    elif "out" in direction.lower:
         translate_out(sentance)
     
     else:
