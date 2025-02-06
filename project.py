@@ -7,6 +7,9 @@ if __name__ == "__main__":
 def pig_latin():
     # get input, translate
     sentance = input(":")
+    direction = input("select: in/out")
+
+    
 
 def translate_in():
     #translate acording to rules
