@@ -18,16 +18,20 @@ def pig_latin():
     else:
         print("incorrect formating")
 
+
 def translate_in(sentance):
     #translate acording to rules
     print("translate in")
+
 
 def translate_out(sentance):
     #fix
     print("translate out")
 
+
 def check_vowels(letter):
     ...
+
 
 def check_word(word):
     ...
