@@ -11,7 +11,8 @@ def pig_latin():
 
     if direction.lower in ["in"]:
         translate_in(sentance)
-    elif direction.lower in ["in"]:
+    elif direction.lower in ["out"]:
+        translate_out(sentance)
 
 def translate_in():
     #translate acording to rules
