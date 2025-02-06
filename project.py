@@ -26,6 +26,12 @@ def translate_out(sentance):
     #fix
     print("translate out")
 
+def check_vowels(letter):
+    ...
+
+def check_word(word):
+    ...
+
 
 if __name__ == "__main__":
     main()
