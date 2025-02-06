@@ -1,8 +1,11 @@
-def main():
-    ...
 
-if __name__ == "__main__":
-    main()
+
+
+
+def main():
+
+    pig_latin()
+
 
 def pig_latin():
     # get input, sellect direction
@@ -25,3 +28,8 @@ def translate_in():
 def translate_out():
     #fix
     ...
+
+
+
+if __name__ == "__main__":
+    main()
