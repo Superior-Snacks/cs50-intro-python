@@ -59,8 +59,9 @@ def check_word_in(word):
             return word.append(choice(suffix))
         else:
             first_vowel = search(r'[eaoiu]', word)
-            print(word.append(word[:first_vowel.start()]+"ay"))
-            return word.append(word[:first_vowel.start()]+"ay")
+            output = word + word[:first_vowel.start()]+"ay"
+            print(output)
+            return output
 
 def check_word_out(word):
     ...
