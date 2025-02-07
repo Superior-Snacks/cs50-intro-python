@@ -12,7 +12,7 @@ def pig_latin():
     # move all the letters that come before the first vowel to the end of the word. 
     # Then, add the suffix “-ay.” 
     # If the word starts with a vowel, just add “-yay,” “-way,” or “-ay” to the end of the word.
-    # example sentance
+    # example sentance: ellohay orldway everyoneway utpay ouryay andshay inay ethay airay
     sentance = input(": ")
     direction = input("select in/out: ").lower()
     print(direction)
@@ -68,10 +68,7 @@ def check_word_in(word):
             return word + choice(suffix)
         else:
             first_vowel = re.search(r'[eaoiu]', word)
-            print(first_vowel, word)
-            output = word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
-            print(output)
-            return output
+            return word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
 
 def check_word_out(word):
     print(word)
