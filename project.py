@@ -16,18 +16,8 @@ def pig_latin():
     sentance = input(": ")
     direction = input("select in/out: ").lower()
     print(direction)
-
-    if "in" == direction:
-        translation = translate_in(sentance)
-        print(translation)
-
-    elif "out" == direction:
-        translation = translate_out(sentance)
-        print(translation)
-        
-    
-    else:
-        print("incorrect formating")
+    translation = translate_in(sentance)
+    print(translation)
 
 
 def translate_in(sentance):
@@ -36,15 +26,6 @@ def translate_in(sentance):
     print("translate in")
     for word in sentance.split(" "):
         output += " " + check_word_in(word)
-    return output
-
-
-def translate_out(sentance):
-    #fix
-    output = ""
-    print("translate out")
-    for word in sentance.split(" "):
-        output += " " + check_word_out(word)
     return output
 
 
@@ -69,14 +50,6 @@ def check_word_in(word):
         else:
             first_vowel = re.search(r'[eaoiu]', word)
             return word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
-
-def check_word_out(word):
-    print(word)
-    suffix = ["yay","way"] 
-
-    for letter in word:
-        ...
-
 
 
 if __name__ == "__main__":
