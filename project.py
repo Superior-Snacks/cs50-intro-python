@@ -1,5 +1,5 @@
 from random import choice
-from re import search, start
+from re import search
 
 def main():
 
