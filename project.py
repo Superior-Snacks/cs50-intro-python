@@ -33,13 +33,20 @@ def translate_out(sentance):
     print("translate out")
 
 
-def check_vowels(letter):
+def check_vowel(letter):
+    # check if letter is a vowel
     vowels = ['e', 'a', 'o', 'i', 'u']
-    ...
+    if letter in vowels:
+        return True
+    else:
+        return False
 
 
 def check_word(word):
-    ...
+    # iterate over letters in the word,
+    for letter in word:
+        if check_vowel(letter)
+
 
 
 if __name__ == "__main__":
