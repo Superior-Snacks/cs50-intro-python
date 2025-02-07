@@ -27,8 +27,12 @@ def pig_latin():
 
 
 def translate_in(sentance):
+    output = ""
     #translate acording to rules
     print("translate in")
+    for word in sentance:
+        output += translate_in(word)
+    return output
 
 
 def translate_out(sentance):
