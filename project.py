@@ -50,5 +50,11 @@ def check_word_in(word):
             return word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
 
 
+class measurement():
+    ...
+
+
+
+
 if __name__ == "__main__":
     main()
