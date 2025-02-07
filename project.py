@@ -47,7 +47,7 @@ def check_vowel(letter):
         return False
 
 
-def check_word(word):
+def check_word_in(word):
     suffix = ["yay","way","ay"]
     # iterate over letters in the word,
     for letter in word:
@@ -58,6 +58,8 @@ def check_word(word):
             print(word.append(word[:first_vowel]+"ay"))
             return word.append(word[:first_vowel]+"ay")
 
+def check_word_out(word):
+    ...
 
 
 if __name__ == "__main__":
