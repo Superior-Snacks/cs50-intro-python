@@ -40,7 +40,7 @@ def check_vowel(letter):
 
 def check_word_in(word):
     print(word)
-    suffix = ["yay","way"]
+    suffix = ["yay","way", "ay"]
     # iterate over letters in the word,
     for letter in word:
         if check_vowel(letter):
