@@ -61,7 +61,7 @@ def check_word_in(word):
         else:
             first_vowel = re.search(r'[eaoiu]', word)
             print(first_vowel, word)
-            output = word + word[:first_vowel.start()]+"ay"
+            output = word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
             print(output)
             return output
 
