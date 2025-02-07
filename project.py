@@ -17,10 +17,13 @@ def pig_latin():
     print(direction)
 
     if "in" == direction:
-        translate_in(sentance)
+        translation = translate_in(sentance)
+        print(translation)
 
     elif "out" == direction:
-        translate_out(sentance)
+        translation = translate_out(sentance)
+        print(translation)
+        
     
     else:
         print("incorrect formating")
