@@ -81,3 +81,28 @@ def check_word_out(word):
 
 if __name__ == "__main__":
     main()
+
+
+def from_pig_latin(text):
+    words = text.split()
+    translated_words = []
+
+    for word in words:
+        if word.endswith("yay") or word.endswith("way"):
+            # Vowel rule: Remove the "yay" or "way" suffix
+            translated_words.append(word[:-3])
+        else:
+            # Consonant rule: Move the last consonant cluster before "ay"
+            stripped_word = word[:-2]  # Remove "ay"
+            for i in range(len(stripped_word) - 1, -1, -1):
+                if stripped_word[i] in "aeiou":
+                    translated_words.append(stripped_word[i + 1:] + stripped_word[:i + 1])
+                    break
+
+    return " ".join(translated_words)
+
+
+# Example usage
+pig_latin_text = "ellohay orldway everyoneway utpay ouryay andshay inay ethay airay"
+translated_text = from_pig_latin(pig_latin_text)
+print("Translated to English:", translated_text)
