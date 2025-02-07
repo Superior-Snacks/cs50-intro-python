@@ -30,7 +30,7 @@ def translate_in(sentance):
     output = ""
     #translate acording to rules
     print("translate in")
-    for word in sentance:
+    for word in sentance.split(" "):
         output += check_word_in(word)
     return output
 
