@@ -1,5 +1,5 @@
 from random import choice
-from re import search
+import re
 
 def main():
 
@@ -58,7 +58,7 @@ def check_word_in(word):
         if check_vowel(letter):
             return word.append(choice(suffix))
         else:
-            first_vowel = search(r'[eaoiu]', word)
+            first_vowel = re.search(r'[eaoiu]', word)
             output = word + word[:first_vowel.start()]+"ay"
             print(output)
             return output
