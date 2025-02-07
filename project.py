@@ -11,7 +11,7 @@ def pig_latin():
     # translating starts with a consonant or a vowel. If it’s a consonant, 
     # move all the letters that come before the first vowel to the end of the word. 
     # Then, add the suffix “-ay.” 
-    # If the word starts with a vowel, just add “-yay,” “-way,” or “-ay” to the end of the word.
+    # If the word starts with a vowel, just add “-yay,” “-way,” to the end of the word.
     # example sentance: ellohay orldway everyoneway utpay ouryay andshay inay ethay airay
     sentance = input(": ")
     direction = input("select in/out: ").lower()
@@ -61,7 +61,7 @@ def check_vowel(letter):
 
 def check_word_in(word):
     print(word)
-    suffix = ["yay","way","ay"]
+    suffix = ["yay","way"]
     # iterate over letters in the word,
     for letter in word:
         if check_vowel(letter):
@@ -72,7 +72,7 @@ def check_word_in(word):
 
 def check_word_out(word):
     print(word)
-    suffix = ["yay","way","ay"] 
+    suffix = ["yay","way"] 
 
     for letter in word:
         ...
