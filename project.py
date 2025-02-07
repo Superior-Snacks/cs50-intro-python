@@ -31,7 +31,7 @@ def translate_in(sentance):
     #translate acording to rules
     print("translate in")
     for word in sentance:
-        output += translate_in(word)
+        output += check_word_in(word)
     return output
 
 
