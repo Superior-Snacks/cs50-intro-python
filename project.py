@@ -5,6 +5,10 @@ def main():
 
 def pig_latin():
     # get input, sellect direction
+    # translating starts with a consonant or a vowel. If it’s a consonant, 
+    # move all the letters that come before the first vowel to the end of the word. 
+    # Then, add the suffix “-ay.” 
+    # If the word starts with a vowel, just add “-yay,” “-way,” or “-ay” to the end of the word.
     sentance = input(": ")
     direction = input("select in/out: ").lower()
     print(direction)
