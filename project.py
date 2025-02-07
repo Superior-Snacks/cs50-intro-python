@@ -34,6 +34,7 @@ def translate_out(sentance):
 
 
 def check_vowels(letter):
+    vowels = ['e', 'a', 'o', 'i', 'u']
     ...
 
 
