@@ -14,8 +14,6 @@ def pig_latin():
     # If the word starts with a vowel, just add “-yay,” “-way,” to the end of the word.
     # example sentance: ellohay orldway everyoneway utpay ouryay andshay inay ethay airay
     sentance = input(": ")
-    direction = input("select in/out: ").lower()
-    print(direction)
     translation = translate_in(sentance)
     print(translation)
 
