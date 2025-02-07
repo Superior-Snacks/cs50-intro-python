@@ -1,3 +1,5 @@
+from random import choice
+
 def main():
 
     pig_latin()
@@ -43,9 +45,13 @@ def check_vowel(letter):
 
 
 def check_word(word):
+    suffix = ["yay","way","ay"]
     # iterate over letters in the word,
     for letter in word:
-        if check_vowel(letter)
+        if check_vowel(letter):
+            return word.append(choice(suffix))
+        else:
+            ...
 
 
 
