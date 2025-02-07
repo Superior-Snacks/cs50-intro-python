@@ -1,6 +1,7 @@
 from random import choice
 import re
 
+
 def main():
 
     pig_latin()
