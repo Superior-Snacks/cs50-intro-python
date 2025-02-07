@@ -36,6 +36,8 @@ def translate_out(sentance):
 
 
 def check_vowel(letter):
+    # to check later
+    consonants = ['t', 'n', 's', 'r', 'h', 'l', 'd', 'c', 'm', 'f', 'p', 'g', 'w', 'y', 'b', 'v', 'k', 'x', 'j', 'q', 'z']
     # check if letter is a vowel
     vowels = ['e', 'a', 'o', 'i', 'u']
     if letter in vowels:
