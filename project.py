@@ -40,7 +40,11 @@ def translate_in(sentance):
 
 def translate_out(sentance):
     #fix
+    output = ""
     print("translate out")
+    for word in sentance.split(" "):
+        output += " " + check_word_out(word)
+    return output
 
 
 def check_vowel(letter):
