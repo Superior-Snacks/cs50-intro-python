@@ -57,9 +57,15 @@ class measurement():
     def __init__(self):
         self.start_time = time.time()
 
+    def start_pc_check(self):
+        ...
+
     def report(self):
         total_time = time.time() - self.start_time
         print(f'time elapsed : {total_time}')
+
+    def print_table(self):
+        ...
 
 if __name__ == "__main__":
     main()
