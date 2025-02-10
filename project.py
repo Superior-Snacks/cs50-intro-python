@@ -45,8 +45,10 @@ def check_word_in(word):
             return word + choice(suffix)
         else:
             first_vowel = re.search(r'[eaoiu]', word)
-            return word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
-
+            if first_vowel:
+                return word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
+            else:
+                return word + "ay"
 
 
 #real project measure and print time and log efficiency
