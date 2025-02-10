@@ -1,6 +1,7 @@
 from random import choice
 import re
-
+import psutil
+import time
 
 def main():
 
