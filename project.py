@@ -4,7 +4,7 @@ import psutil
 import time
 
 def main():
-
+    manage = measurement()
     pig_latin()
 
 
@@ -51,9 +51,12 @@ def check_word_in(word):
 #real project measure and print time and log efficiency
 class measurement():
 
-    def __init__(self, name):
-        self.name = name
-        self.start_time
+    def __init__(self):
+        self.start_time = time.time()
+
+    def report(self):
+        total_time = time.time() - self.start_time
+        print(f'time elapsed : {total_time}')
 
 if __name__ == "__main__":
     main()
