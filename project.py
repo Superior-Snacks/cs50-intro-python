@@ -51,9 +51,9 @@ def check_word_in(word):
 #real project measure and print time and log efficiency
 class measurement():
 
-    def __init__(self):
-        ...
-
+    def __init__(self, name):
+        self.name = name
+        self.start_time
 
 if __name__ == "__main__":
     main()
