@@ -50,7 +50,7 @@ def check_word_in(word):
 
 #real project measure and print time and log efficiency
 class measurement():
-
+    ...
 
 
 
