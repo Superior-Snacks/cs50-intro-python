@@ -47,8 +47,9 @@ def check_word_in(word):
             return word[first_vowel.start():] + word[:first_vowel.start()]+"ay"
 
 
+
+#real project measure and print time and log efficiency
 class measurement():
-    ...
 
 
 
