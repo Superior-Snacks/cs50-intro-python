@@ -73,7 +73,7 @@ class measurement():
         average_memory = sum(self.memory_bin) / len(self.memory_bin)
         print(f'time elapsed : {total_time}')
         print(f'average cpu usage: {average_cpu}%')
-        print(f'')
+        print(f'average memory usage: {average_memory}')
 
     def print_table(self):
         ...
