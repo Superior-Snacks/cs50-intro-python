@@ -11,7 +11,9 @@ def main():
 def pig_latin():
     # get input
     #sentance = input(": ")
-    print(23632624574567456745645674567456745745674567456775634575 ** 3546)
+    x = 1
+    for x in range(10000000):
+        x += 235646359995 ** 367
     sentance = "hello world everyone wants these hands but noone will integrate over areas of interest"
     translation = translate_in(sentance)
     print(translation)
