@@ -5,9 +5,10 @@ import time
 
 def main():
     manage = measurement()
-    pig_latin()
-    manage.start_pc_check()
-    manage.report()
+    for x in range(5):
+        pig_latin()
+        manage.start_pc_check()
+        manage.report()
 
 
 def pig_latin():
@@ -60,7 +61,6 @@ class measurement():
         self.memory_bin = []
 
     def start_pc_check(self):
-        for x in range(4):
             memory = psutil.virtual_memory().used
             cpu = psutil.cpu_percent(interval=1)
             self.memory_bin.append(memory)
