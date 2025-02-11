@@ -72,6 +72,7 @@ class measurement():
 
     def report(self):
         total_time = time.time() - self.start_time
+        average_time = sum(self.time_bin) / len(self.time_bin)
         average_cpu = sum(self.cpu_bin) / len(self.cpu_bin)
         average_memory = sum(self.memory_bin) / len(self.memory_bin)
         print(f'time elapsed : {total_time}')
