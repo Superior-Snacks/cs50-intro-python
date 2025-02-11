@@ -6,7 +6,6 @@ import time
 def main():
     manage = measurement(pig_latin)
     manage.run_and_mointor()
-    manage.report()
 
 
 def pig_latin():
