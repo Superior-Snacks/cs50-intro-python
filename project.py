@@ -61,7 +61,7 @@ class measurement():
         ...
         memory = psutil.virtual_memory()
         used = memory.used
-        cpu = psutil.cpu_percent(interval=1)
+        cpu = psutil.cpu_percent()
         print(f'cpu = {cpu}')
         print(f'memory used {used}')
 
