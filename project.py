@@ -74,7 +74,7 @@ class measurement():
             cpu_after = process.cpu_percent(interval=0.1)
             memory_after = process.memory_info().rss / (1024 ** 2)
 
-            cpu = max(0, cpu_after - cpu_before)
+            cpu = cpu_after - cpu_before
             memory = memory_after - memory_before
             self.memory_bin.append(memory)
             self.cpu_bin.append(cpu)
