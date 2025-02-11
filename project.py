@@ -63,15 +63,16 @@ class measurement():
         for x in range(10):
             self.start_time = time.time()
             self.project()
+            total_time = time.time() - self.start_time
             memory = psutil.virtual_memory().used
             cpu = psutil.cpu_percent(interval=1)
             self.memory_bin.append(memory)
             self.cpu_bin.append(cpu)
+            self.time_bin.append(total_time)
             print(f'cpu usage {cpu}% | memory usage {memory}')
 
 
     def report(self):
-        total_time = time.time() - self.start_time
         average_time = sum(self.time_bin) / len(self.time_bin)
         average_cpu = sum(self.cpu_bin) / len(self.cpu_bin)
         average_memory = sum(self.memory_bin) / len(self.memory_bin)
