@@ -56,6 +56,7 @@ class measurement():
     def __init__(self, project):
         self.cpu_bin = []
         self.memory_bin = []
+        self.time_bin = []
         self.project = project
 
     def start_pc_check(self):
