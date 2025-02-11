@@ -63,6 +63,9 @@ class measurement():
         process = psutil.Process()
         self.start_time = time.time()
 
+        #start program
+        self.project()
+
 
     def start_pc_check(self):
         for x in range(10):
