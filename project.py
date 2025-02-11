@@ -4,11 +4,9 @@ import psutil
 import time
 
 def main():
-    manage = measurement()
-    for x in range(5):
-        pig_latin()
-        manage.start_pc_check()
-        manage.report()
+    manage = measurement(pig_latin())
+    manage.start_pc_check()
+    manage.report()
 
 
 def pig_latin():
@@ -55,7 +53,7 @@ def check_word_in(word):
 #real project measure and print time and log efficiency
 class measurement():
 
-    def __init__(self):
+    def __init__(self, project):
         self.start_time = time.time()
         self.cpu_bin = []
         self.memory_bin = []
