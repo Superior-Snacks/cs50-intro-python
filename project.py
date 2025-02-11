@@ -62,10 +62,11 @@ class measurement():
         self.project = project
 
     def run_and_mointor(self):
+        cpu_count = psutil.cpu_count(logical=True)
+        process = psutil.Process()
+
         for x in range(5):
-            process = psutil.Process()
             self.start_time = time.time()
-            
 
             cpu_before = process.cpu_times().user + process.cpu_times().system
             memory_before = process.memory_info().rss / (1024 ** 2)
