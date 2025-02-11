@@ -81,7 +81,7 @@ class measurement():
             self.cpu_bin.append(cpu)
             self.time_bin.append(total_time)
 
-            self.report()
+        self.report()
 
 
     def report(self):
