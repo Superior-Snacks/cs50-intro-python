@@ -54,13 +54,14 @@ def check_word_in(word):
 class measurement():
 
     def __init__(self, project):
-        for x in range(5):
-            project
-            self.start_time = time.time()
-            self.cpu_bin = []
-            self.memory_bin = []
+        self.start_time = time.time()
+        self.cpu_bin = []
+        self.memory_bin = []
+        self.project = project
 
     def start_pc_check(self):
+        for x in range(5):
+            self.project()
             memory = psutil.virtual_memory().used
             cpu = psutil.cpu_percent(interval=1)
             self.memory_bin.append(memory)
