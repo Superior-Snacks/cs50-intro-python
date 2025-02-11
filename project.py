@@ -63,7 +63,7 @@ class measurement():
         used = memory.used()
         print(f'memory used {used}')
 
-    def report(self, memory):
+    def report(self):
         total_time = time.time() - self.start_time
         print(f'time elapsed : {total_time}')
 
