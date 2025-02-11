@@ -64,6 +64,7 @@ class measurement():
         cpu = psutil.cpu_percent(interval=1)
         self.memory_bin.append(memory)
         self.cpu_bin.append(cpu)
+        print(f'cpu usage {cpu}%')
 
 
     def report(self):
