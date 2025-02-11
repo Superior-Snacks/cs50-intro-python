@@ -59,6 +59,11 @@ class measurement():
         self.time_bin = []
         self.project = project
 
+    def run_and_mointor(self):
+        process = psutil.Process()
+        self.start_time = time.time()
+
+
     def start_pc_check(self):
         for x in range(10):
             self.start_time = time.time()
