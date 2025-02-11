@@ -53,9 +53,9 @@ def check_word_in(word):
 #real project measure and print time and log efficiency
 class measurement():
 
-    def __init__(self, piglatin):
+    def __init__(self, project):
         for x in range(5):
-            piglatin()
+            project
             self.start_time = time.time()
             self.cpu_bin = []
             self.memory_bin = []
