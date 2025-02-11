@@ -23,7 +23,7 @@ def translate_in(sentance):
     #translate acording to rules
     for word in sentance.split(" "):
         output += " " + check_word_in(word)
-    return output[0:]
+    return output[1:]
 
 
 def check_vowel(letter):
