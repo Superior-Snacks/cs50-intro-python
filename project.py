@@ -66,6 +66,12 @@ class measurement():
         #start program
         self.project()
 
+        total_time = time.time() - self.start_time
+        memory = psutil.virtual_memory().used
+        cpu = psutil.cpu_percent(interval=1)
+        self.memory_bin.append(memory)
+        self.cpu_bin.append(cpu)
+        self.time_bin.append(total_time)
 
     def start_pc_check(self):
         for x in range(10):
