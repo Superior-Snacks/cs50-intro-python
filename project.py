@@ -6,7 +6,7 @@ import time
 def main():
     manage = measurement()
     pig_latin()
-    manage.start_pc_check()
+    #manage.start_pc_check()
     manage.report()
 
 
@@ -68,6 +68,11 @@ class measurement():
     def report(self):
         total_time = time.time() - self.start_time
         print(f'time elapsed : {total_time}')
+        memory = psutil.virtual_memory()
+        used = memory.used
+        cpu = psutil.cpu_percent(interval=1)
+        print(f'cpu = {cpu}')
+        print(f'memory used {used}')
 
     def print_table(self):
         ...
