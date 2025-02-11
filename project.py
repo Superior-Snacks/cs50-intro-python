@@ -13,7 +13,7 @@ def pig_latin():
     #sentance = input(": ")
     x = 1
     for x in range(10000):
-        x += 999999999 ** 999
+        x += 99999999 ** 999
     sentance = "hello world everyone wants these hands but noone will integrate over areas of interest"
     translation = translate_in(sentance)
     print(translation)
@@ -91,9 +91,9 @@ class measurement():
         average_time = sum(self.time_bin) / len(self.time_bin) if self.time_bin else 0
         average_cpu = sum(self.cpu_bin) / len(self.cpu_bin) / average_time * 100 if self.cpu_bin else 0
         average_memory = sum(self.memory_bin) / len(self.memory_bin) if self.memory_bin else 0
-        print(f'average time elapsed : {average_time}')
-        print(f'average cpu usage: {average_cpu}%')
-        print(f'average memory usage: {average_memory}')
+        print(f'average time elapsed : {average_time:.2f}')
+        print(f'average cpu usage: {average_cpu:.2f}%') # fix this is prolly worng
+        print(f'average memory usage: {average_memory:.2f}')
 
     def print_table(self):
         ...
