@@ -60,6 +60,9 @@ class measurement():
 
     def run_and_mointor(self):
         for x in range(5):
+            print(f'>>>>{self.cpu_bin}')
+            print(f'>>>>{self.memory_bin}')
+            print(f'>>>>{self.time_bin}')
             process = psutil.Process()
             self.start_time = time.time()
 
