@@ -86,9 +86,9 @@ class measurement():
 
 
     def report(self):
-        average_time = sum(self.time_bin) / len(self.time_bin)
-        average_cpu = sum(self.cpu_bin) / len(self.cpu_bin)
-        average_memory = sum(self.memory_bin) / len(self.memory_bin)
+        average_time = sum(self.time_bin) / len(self.time_bin) if self.time_bin else 0
+        average_cpu = sum(self.cpu_bin) / len(self.cpu_bin) if self.cpu_bin else 0
+        average_memory = sum(self.memory_bin) / len(self.memory_bin) if self.memory_bin else 0
         print(f'average time elapsed : {average_time}')
         print(f'average cpu usage: {average_cpu}%')
         print(f'average memory usage: {average_memory}')
