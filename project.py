@@ -15,7 +15,6 @@ def pig_latin():
     #sentance = input(": ")
     sentance = "hello world everyone wants these hands but noone will integrate over areas of interest"
     translation = translate_in(sentance)
-    print(translation)
 
 
 def translate_in(sentance):
