@@ -67,9 +67,9 @@ class measurement():
             #start program
             self.project()
 
+            cpu = process.cpu_percent(interval=None)
             total_time = time.time() - self.start_time
             memory = process.memory_info().rss / (1024 ** 2)
-            cpu = process.cpu_percent(interval=None)
             self.memory_bin.append(memory)
             self.cpu_bin.append(cpu)
             self.time_bin.append(total_time)
