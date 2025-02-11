@@ -62,8 +62,9 @@ class measurement():
         for x in range(5):
             process = psutil.Process()
             self.start_time = time.time()
+            
 
-            cpu_before = process.cpu_percent(interval=0.1)
+            cpu_before = process.cpu_times().user + process.cpu_times().system
             memory_before = process.memory_info().rss / (1024 ** 2)
 
             # Start program
@@ -71,10 +72,10 @@ class measurement():
 
             total_time = time.time() - self.start_time
 
-            cpu_after = process.cpu_percent(interval=0.1)
             memory_after = process.memory_info().rss / (1024 ** 2)
+            cpu_after = process.cpu_times().user + process.cpu_times().system
 
-            cpu = cpu_after - cpu_before
+            cpu = max(0, cpu_after - cpu_before)
             memory = memory_after - memory_before
             self.memory_bin.append(memory)
             self.cpu_bin.append(cpu)
