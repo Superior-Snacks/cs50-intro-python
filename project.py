@@ -59,8 +59,11 @@ class measurement():
 
     def start_pc_check(self):
         ...
+        memory = psutil.virtual_memory()
+        used = memory.used()
+        print(f'memory used {used}')
 
-    def report(self):
+    def report(self, memory):
         total_time = time.time() - self.start_time
         print(f'time elapsed : {total_time}')
 
