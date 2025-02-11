@@ -60,28 +60,26 @@ class measurement():
 
     def run_and_mointor(self):
         for x in range(5):
-            print(f'>>>>{self.cpu_bin}')
-            print(f'>>>>{self.memory_bin}')
-            print(f'>>>>{self.time_bin}')
-            process = psutil.Process()
-            self.start_time = time.time()
+                process = psutil.Process()
+                self.start_time = time.time()
 
-            cpu_before = process.cpu_percent(interval=0.1)
-            memory_before = process.memory_info().rss / (1024 ** 2)
+                cpu_before = process.cpu_percent(interval=0.1)
+                memory_before = process.memory_info().rss / (1024 ** 2)
 
-            #start program
-            self.project()
+                # Start program
+                self.project()
 
-            total_time = time.time() - self.start_time
+                total_time = time.time() - self.start_time
 
-            cpu_after = process.cpu_percent(interval=0.1)
-            memory_after = process.memory_info().rss / (1024 ** 2)
+                cpu_after = process.cpu_percent(interval=0.1)
+                memory_after = process.memory_info().rss / (1024 ** 2)
 
-            cpu = max(0, cpu_after -cpu_before)
-            memory = memory_after - memory_before
-            self.memory_bin.append(memory)
-            self.cpu_bin.append(cpu)
-            self.time_bin.append(total_time)
+                cpu = max(0, cpu_after - cpu_before)
+                memory = memory_after - memory_before
+                self.memory_bin.append(memory)
+                self.cpu_bin.append(cpu)
+                self.time_bin.append(total_time)
+
             self.report()
 
 
