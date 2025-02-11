@@ -85,3 +85,11 @@ class measurement():
 
 if __name__ == "__main__":
     main()
+
+average time elapsed : 0.0009419202804565429
+average cpu usage: 45.690000000000005%
+average memory usage: 11319926784.0
+
+average time elapsed : 0.0002550363540649414
+average cpu usage: 10.82%
+average memory usage: 11343635251.2
