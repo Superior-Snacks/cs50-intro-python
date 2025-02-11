@@ -80,9 +80,11 @@ class measurement():
             cpu_after = process.cpu_times().user + process.cpu_times().system
 
             cpu = max(0, cpu_after - cpu_before)
+            normalized_cpu_usage = (cpu / total_time) / cpu_count * 100
+
             memory = memory_after - memory_before
             self.memory_bin.append(memory)
-            self.cpu_bin.append(cpu)
+            self.cpu_bin.append(normalized_cpu_usage)
             self.time_bin.append(total_time)
 
         self.report()
@@ -90,7 +92,7 @@ class measurement():
 
     def report(self):
         average_time = sum(self.time_bin) / len(self.time_bin) if self.time_bin else 0
-        average_cpu = sum(self.cpu_bin) / len(self.cpu_bin) / average_time * 100 if self.cpu_bin else 0
+        average_cpu = sum(self.cpu_bin) / len(self.cpu_bin) if self.cpu_bin else 0
         average_memory = sum(self.memory_bin) / len(self.memory_bin) if self.memory_bin else 0
         print(f'average time elapsed : {average_time:.2f}')
         print(f'average cpu usage: {average_cpu:.2f}%') # fix this is prolly worng
