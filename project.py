@@ -5,7 +5,7 @@ import time
 
 def main():
     manage = measurement(pig_latin)
-    manage.start_pc_check()
+    manage.run_and_mointor()
     manage.report()
 
 
