@@ -56,14 +56,15 @@ class measurement():
 
     def __init__(self):
         self.start_time = time.time()
+        self.cpu_bin = []
+        self.memory_bin = []
 
     def start_pc_check(self):
-        ...
-        memory = psutil.virtual_memory()
-        used = memory.used
+        memory = psutil.virtual_memory().used
         cpu = psutil.cpu_percent(interval=1)
-        print(f'cpu = {cpu}')
-        print(f'memory used {used}')
+        self.memory_bin.append(memory)
+        self.cpu_bin.append(cpu)
+
 
     def report(self):
         total_time = time.time() - self.start_time
