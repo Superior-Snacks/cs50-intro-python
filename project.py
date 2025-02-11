@@ -59,6 +59,7 @@ class measurement():
         self.memory_bin = []
 
     def start_pc_check(self):
+        for x in range(5):
             memory = psutil.virtual_memory().used
             cpu = psutil.cpu_percent(interval=1)
             self.memory_bin.append(memory)
