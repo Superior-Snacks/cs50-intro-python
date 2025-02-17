@@ -13,7 +13,7 @@ def week_planner():
 def add_task():
     ...
 
-def remove_taks():
+def remove_task():
     ...
 
 def view_tasks():
