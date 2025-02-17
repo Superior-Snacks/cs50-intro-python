@@ -15,4 +15,6 @@ def add_task():
 
 def remove_taks():
     ...
-    
+
+def view_tasks():
+    ...
