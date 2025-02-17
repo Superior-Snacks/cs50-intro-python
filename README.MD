@@ -5,3 +5,4 @@ tasks sorted by
 -events
 -special days (astro,newyear,ectra)
 -tasks, sort(anyday,specfc day, anytime, specfk range)
+-decide freetime
