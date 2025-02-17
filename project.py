@@ -21,6 +21,9 @@ def remove_task():
 
 def finnish_task():
     ...
-    
+
+def sort_tasks():
+    ...
+
 def view_tasks():
     ...
