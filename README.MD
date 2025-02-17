@@ -6,3 +6,4 @@ tasks sorted by
 -special days (astro,newyear,ectra)
 -tasks, sort(anyday,specfc day, anytime, specfk range)
 -decide freetime
+-time to compleet range estimate
