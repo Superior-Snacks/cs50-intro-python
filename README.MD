@@ -1,3 +1,4 @@
 week planner
 
-tasks sorted by routene rigid!, flexible
+tasks sorted by 
+-routene rigid!, flexible
