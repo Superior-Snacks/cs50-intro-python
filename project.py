@@ -27,3 +27,6 @@ def sort_tasks():
 
 def view_tasks():
     ...
+
+def planner_paramiter():
+    ...
