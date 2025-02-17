@@ -9,4 +9,6 @@ if __name__ == "__main__":
 
 def week_planner():
     ...
-    
+
+def add_task():
+    ...
