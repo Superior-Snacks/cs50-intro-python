@@ -8,9 +8,6 @@ def main():
     view_single()
 
 
-if __name__ == "__main__":
-    main()
-
 def week_planner():
     while True:
         print("add task = 1")
@@ -71,3 +68,5 @@ def view_single():
 
 
 
+if __name__ == "__main__":
+    main()
