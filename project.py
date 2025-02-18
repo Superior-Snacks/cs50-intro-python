@@ -2,7 +2,6 @@ import json
 
 
 def main():
-    ...
 
     week_planner()
 
