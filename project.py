@@ -32,6 +32,8 @@ def add_task():
     description = input("description: ")
     print("what type of task is it rigid/flowing")
     task_type = input("rigid = 1, flowing = 2")
+    if task_type == 1:
+        print("declare day and time")
     with open("calander.json", 'w') as add:
         ...
 
