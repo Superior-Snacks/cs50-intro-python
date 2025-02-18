@@ -16,7 +16,8 @@ def week_planner():
         print("remove task = 2")
         print("finnish task = 3")
         print("veiw tasks = 4")
-        print("save/exit = 5")
+        print("add routine = 5")
+        print("save/exit = ")
 
         action = int(input(": "))
         if action == 1:
