@@ -61,6 +61,10 @@ def view_tasks():
 def planner_paramiter():
     ...
 
+def view_single():
+    with open("calander.json", 'r') as see:
+        ...
+
 
 
 
