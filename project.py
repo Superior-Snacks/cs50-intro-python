@@ -39,6 +39,8 @@ def add_task():
         "name": name,
         "description": description,
         "estimate": estimate,
+        "day": day,
+        "time": time
     }
 
     with open("calander.json", 'w') as add:
