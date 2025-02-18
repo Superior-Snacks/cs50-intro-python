@@ -25,7 +25,8 @@ def week_planner():
             remove_task()
 
 def add_task():
-    ...
+    with open("calander.json", 'w') as add:
+        ...
 
 def remove_task():
     ...
