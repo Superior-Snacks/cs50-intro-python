@@ -30,6 +30,7 @@ def add_task():
     print("add task, specify name and description")
     name = input("name: ")
     description = input("description: ")
+    estimate = input("estimated length 0.0hr:")
     print("what type of task is it rigid/flowing")
     task_type = input("rigid = 1, flowing = 2")
     if task_type == 1:
