@@ -35,6 +35,7 @@ def add_task():
     if task_type == 1:
         print("declare day and time")
         day = input("day: ")
+        time = input("write time in 00:00 format or give a range 00:00 - 00:00")
     with open("calander.json", 'w') as add:
         ...
 
