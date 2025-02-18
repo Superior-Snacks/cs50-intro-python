@@ -4,7 +4,9 @@ import json
 def main():
     ...
 
+    week_planner()
 
+    view_single()
 
 
 if __name__ == "__main__":
