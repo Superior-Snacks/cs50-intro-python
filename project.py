@@ -32,7 +32,7 @@ def add_task():
     description = input("description: ")
     estimate = input("estimated length 0.0hr:")
     print("give range or spesific time and day")
-    day = input("day: ")
+    day = input("day mon - tue: ")
     time = input("write time in 00:00 format or give a range 00:00 - 00:00")
     with open("calander.json", 'w') as add:
         ...
