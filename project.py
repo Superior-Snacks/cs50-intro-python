@@ -23,7 +23,7 @@ def week_planner():
         if action == 2:
             remove_task()
         if action == 3:
-            False
+            break
 
 def add_task():
     print("-----------------------")
