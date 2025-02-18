@@ -25,6 +25,11 @@ def week_planner():
             remove_task()
 
 def add_task():
+    print("-----------------------")
+    print("add task, specify name and description")
+    name = input("name: ")
+    description = input("description: ")
+    print("wat type of task is it")
     with open("calander.json", 'w') as add:
         ...
 
