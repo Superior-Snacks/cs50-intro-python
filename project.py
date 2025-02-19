@@ -110,6 +110,8 @@ def check_data(data):
         print("format time propperly")
     else:
         data["time"] = time
+    
+    return x
 
 
 def reg_estimate(data):
