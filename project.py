@@ -106,7 +106,10 @@ def check_data(data):
         data["day"] = day
 
     time = reg_time(data["time"])
-    
+    if time == "Wrong":
+        print("format time propperly")
+    else:
+        data["time"] = time
 
 
 def reg_estimate(data):
