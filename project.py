@@ -93,7 +93,13 @@ def check_data(data):
     if len(data["description"]) > 200:
         print("descriptin too long, it is not that deep bro")
         x = False
-    reg_estimate(data["estimate"])
+    estimate = reg_estimate(data["estimate"])
+    if estimate == "Wrong":
+        print("give a propper estmate")
+    else:
+        data["estimate"] = estimate
+    
+    day = re
 
 
 def reg_estimate(data):
