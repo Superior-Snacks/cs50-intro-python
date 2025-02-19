@@ -42,6 +42,8 @@ def add_task():
         "day": day,
         "time": time
     }
+    if check_data(data) == False:
+        return 
     loaded = load_data()
     with open("calander.json", 'w') as add:
         loaded.append(data)
