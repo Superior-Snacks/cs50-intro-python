@@ -102,7 +102,8 @@ def reg_estimate(data):
 def reg_day(data):
     ...
 
-    
+def reg_hour(data):
+    ...
 
 if __name__ == "__main__":
     main()
