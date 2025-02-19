@@ -86,7 +86,11 @@ def load_data():
 
 
 def check_data(data):
-    ...
+    x = True
+    if len(data["name"]) > 20:
+        print("name too long")
+        x = False
+    if data[]
 
 
 
