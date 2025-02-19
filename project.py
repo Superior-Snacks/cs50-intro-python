@@ -97,7 +97,9 @@ def check_data(data):
 
 
 def reg_estimate(data):
+    estimate_format = ""
     ...
+    return estimate_format
 
 def reg_day(data):
     ...
