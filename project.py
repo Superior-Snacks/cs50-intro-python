@@ -102,10 +102,10 @@ def reg_estimate(data):
     return estimate_format
 
 def reg_day(data):
-    ...
+    day_format = ""
 
 def reg_time(data):
-    ...
+    
 
 if __name__ == "__main__":
     main()
