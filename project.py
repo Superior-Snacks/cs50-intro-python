@@ -105,6 +105,7 @@ def check_data(data):
     else:
         data["day"] = day
 
+    time = reg_time(data["time"])
     
 
 
