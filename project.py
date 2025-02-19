@@ -96,7 +96,8 @@ def check_data(data):
     reg_estimate(data["estimate"])
 
 
-
+def reg_estimate(data):
+    ...
 
 if __name__ == "__main__":
     main()
