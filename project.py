@@ -68,8 +68,12 @@ def view_single():
         print(loaded_data)
 
 def load_data():
-    with open("calander.json", 'r') as load:
-        whole_plan = json.load(load)
+    whole_plan = []
+    try:
+        with open("calander.json", 'r') as load:
+            whole_plan = json.load(load)
+            return whole_plan
+    except:
         return whole_plan
 
 
