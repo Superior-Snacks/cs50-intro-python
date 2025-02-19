@@ -92,6 +92,9 @@ def check_data(data):
         x = False
     if len(data["description"]) > 200:
         print("descriptin too long, it is not that deep bro")
+        x = False
+    reg_estimate(data["estimate"])
+
 
 
 
