@@ -1,5 +1,5 @@
 import json
-import Texttable
+import texttable
 
 
 def main():
