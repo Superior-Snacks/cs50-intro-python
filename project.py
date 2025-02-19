@@ -99,7 +99,8 @@ def check_data(data):
     else:
         data["estimate"] = estimate
     
-    day = re
+    day = reg_day(data["day"])
+    
 
 
 def reg_estimate(data):
