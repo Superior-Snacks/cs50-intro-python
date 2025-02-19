@@ -79,6 +79,8 @@ def load_data():
         return whole_plan
 
 
+def check_data(data):
+
 
 
 if __name__ == "__main__":
