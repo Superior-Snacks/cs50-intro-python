@@ -42,9 +42,10 @@ def add_task():
         "day": day,
         "time": time
     }
-
+    loaded = load_data()
     with open("calander.json", 'w') as add:
-        json.dump(data, add)
+        loaded += data
+        json.dump(loaded, add)
 
 def remove_task():
     ...
@@ -66,6 +67,10 @@ def view_single():
         loaded_data = json.load(see)
         print(loaded_data)
 
+def load_data():
+    with open("calander.json", 'r') as load:
+        whole_plan = json.load(load)
+        return whole_plan
 
 
 
