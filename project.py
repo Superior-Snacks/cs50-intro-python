@@ -44,7 +44,7 @@ def add_task():
     }
     loaded = load_data()
     with open("calander.json", 'w') as add:
-        loaded += data
+        loaded[1].append(data)
         json.dump(loaded, add)
 
 def remove_task():
