@@ -102,6 +102,10 @@ def check_data(data):
     day = reg_day(data["day"])
     if day == "Wrong":
         print("pleas give a valid date")
+    else:
+        data["day"] = day
+
+    
 
 
 def reg_estimate(data):
