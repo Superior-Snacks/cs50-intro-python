@@ -90,7 +90,8 @@ def check_data(data):
     if len(data["name"]) > 20:
         print("name too long")
         x = False
-    if data[]
+    if len(data["description"]) > 200:
+        print("descriptin too long, it is not that deep bro")
 
 
 
