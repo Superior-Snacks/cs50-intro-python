@@ -99,5 +99,10 @@ def check_data(data):
 def reg_estimate(data):
     ...
 
+def reg_day(data):
+    ...
+
+    
+
 if __name__ == "__main__":
     main()
