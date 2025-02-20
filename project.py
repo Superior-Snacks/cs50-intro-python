@@ -106,7 +106,7 @@ def check_data(data):
 def reg_estimate(data):
     pattern = re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s*(hours?|hrs?|HR|Hr|HRS|Hours)?$", data)
     if pattern:
-        return "{:.2f}".format(pattern.group(0)) 
+        return "{:.2f}".format(hours) 
     else:
         return "Wrong"
 
