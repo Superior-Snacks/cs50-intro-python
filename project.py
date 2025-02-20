@@ -104,7 +104,7 @@ def check_data(data):
 
 #fix
 def reg_estimate(data):
-    pattern = re.match(r"[0-9]{1,2}[hour]|[hr]", data)
+    pattern = re.match(r"[0-9]{1,2}\.[0-9][hour]|[]", data)
     if pattern:
         return pattern
     else:
