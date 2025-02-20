@@ -101,11 +101,9 @@ def check_data(data):
         print("pleas give a valid date")
         x = False
 
-    time = reg_time(data["time"])
-    if time == "Wrong":
+    if data["time"] == "Wrong":
         print("format time propperly")
-    else:
-        data["time"] = time
+        x = False
     
     return x
 
