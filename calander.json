@@ -1,1 +1,1 @@
-[{"name": "1", "description": "1", "estimate": "1", "day": "1", "time": "1"}, {"name": "2", "description": "2", "estimate": "2", "day": "2", "time": "2"}, {"name": "3", "description": "3", "estimate": "3", "day": "3", "time": "3"}]
+[{"name": "1", "description": "1", "estimate": "1", "day": "1", "time": "1"}, {"name": "2", "description": "2", "estimate": "2", "day": "2", "time": "2"}, {"name": "3", "description": "3", "estimate": "3", "day": "3", "time": "3"}, {"name": "sun", "description": "the sun", "estimate": "3", "day": "mon - tue", "time": "10:00-12:00"}]
