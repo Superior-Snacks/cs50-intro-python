@@ -105,17 +105,17 @@ def check_data(data):
     
     return x
 
-
+#fix
 def reg_estimate(data):
-    estimate_format = ""
+    estimate_format = data
     return estimate_format
 
 def reg_day(data):
-    day_format = ""
+    day_format = data
     return day_format
 
 def reg_time(data):
-    time_format = ""
+    time_format = data
     return time_format
     
 
