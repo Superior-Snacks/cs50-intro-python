@@ -96,11 +96,9 @@ def check_data(data):
     if data["estimate"] == "Wrong":
         print("give a propper estmate")
         x = False
-    
     if data["day"] == "Wrong":
         print("pleas give a valid date")
         x = False
-
     if data["time"] == "Wrong":
         print("format time propperly")
         x = False
