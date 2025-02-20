@@ -111,6 +111,7 @@ def reg_estimate(data):
     else:
         return "Wrong"
 
+#return day in form of 1,2,3
 def reg_day(data):
     day_format = data
     return day_format
