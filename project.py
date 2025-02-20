@@ -111,12 +111,13 @@ def reg_estimate(data):
     else:
         return "Wrong"
 
-#return day in form of 1,2,3
+#return day in form of [1,2,3]
 def reg_day(data):
     week = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     day_format = data
     return day_format
 
+#return time in form [00:00, 00:00]
 def reg_time(data):
     time_format = data
     return time_format
