@@ -103,7 +103,7 @@ def check_data(data):
 
 #fix
 def reg_estimate(data):
-    pattern = re.match(r"[0-9]{2}[0-9]{2}", data)
+    pattern = re.match(r"[0-9]{2}-?[0-9]{2}", data)
     if pattern:
         return estimate_format
     else:
