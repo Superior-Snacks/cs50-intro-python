@@ -4,9 +4,10 @@ import re
 
 def main():
 
-    week_planner()
+    print(reg_estimate(input(":")))
+    #week_planner()
 
-    view_single()
+    #view_single()
 
 
 def week_planner():
@@ -105,7 +106,7 @@ def check_data(data):
 def reg_estimate(data):
     pattern = re.match(r"[0-9]{2}-?[0-9]{2}", data)
     if pattern:
-        return estimate_format
+        return pattern
     else:
         return "Wrong"
 
