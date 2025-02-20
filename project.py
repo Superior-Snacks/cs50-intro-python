@@ -11,12 +11,8 @@ def main():
 
 def week_planner():
     while True:
-        print("add task = 1")
-        print("remove task = 2")
-        print("finnish task = 3")
-        print("veiw tasks = 4")
-        print("add routine = 5")
-        print("save/exit = ")
+        print("soon: add routine, move task, save and exit")
+        print("add[1] remove[2] complete[3]")
 
         action = int(input(": "))
         if action == 1:
