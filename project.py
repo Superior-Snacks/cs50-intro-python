@@ -119,6 +119,7 @@ def reg_day(data):
 
 #return time in form [00:00, 00:00]
 def reg_time(data):
+    pattern = re.match()
     time_format = data
     return time_format
     
