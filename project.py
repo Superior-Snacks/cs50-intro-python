@@ -103,8 +103,11 @@ def check_data(data):
 
 #fix
 def reg_estimate(data):
-    estimate_format = data
-    return estimate_format
+    pattern = re.match(r"", data)
+    if pattern:
+        return estimate_format
+    else:
+        return "Wrong"
 
 def reg_day(data):
     day_format = data
