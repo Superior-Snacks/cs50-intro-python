@@ -4,7 +4,7 @@ import re
 
 def main():
 
-    print(reg_estimate(input(":")))
+    print(reg_time(input(":")))
     #week_planner()
 
     #view_single()
