@@ -119,9 +119,10 @@ def reg_day(data):
 
 #return time in form [00:00, 00:00]
 def reg_time(data):
-    pattern = re.match(r"[0-2][0-9]?:[0-5][0-9]\s?-?\s?[0-2][0-9]?:[0-5][0-9]", data)
-    if pattern:
-        return pattern
+    #pattern = re.match(r"[0-2][0-9]?:[0-5][0-9]\s?-?\s?[0-2][0-9]?:[0-5][0-9]", data)
+    patternx = re.match(r"", data)
+    if patternx:
+        return patternx
     else:
         return "Wrong"
     
