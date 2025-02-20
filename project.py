@@ -102,7 +102,7 @@ def check_data(data):
     
     return x
 
-#fix
+#retrun hours in form of 0.00
 def reg_estimate(data):
     if re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s*(hours?|hrs?|HR|Hr|HRS|Hours)?$", data):
         get = re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s", data)
