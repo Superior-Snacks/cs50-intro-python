@@ -39,9 +39,9 @@ def add_task():
     data = {
         "name": name,
         "description": description,
-        "estimate": estimate,
-        "day": day,
-        "time": time
+        "estimate": reg_estimate(estimate),
+        "day": reg_day(day),
+        "time": reg_time(time)
     }
 
 
