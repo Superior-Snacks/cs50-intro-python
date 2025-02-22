@@ -130,6 +130,10 @@ def reg_time(data):
         return pattern
     else:
         return "Wrong"
+
+
+def switch_to_24hr(data):
+    ...
     
 
 if __name__ == "__main__":
