@@ -125,6 +125,7 @@ def reg_time(data):
     patternx = re.match(r"^([0]?[1-9]|1[0-2])(:[0-5][0-9])?\s*(am|AM|pm|PM)\s*(-?\s*([0]?[1-9]|1[0-2])(:[0-5][0-9])?\s*(am|AM|pm|PM))?$", data)
     
     if patternx:
+        switch_to_24hr(patternx)
         return patternx
     elif pattern:
         return pattern
