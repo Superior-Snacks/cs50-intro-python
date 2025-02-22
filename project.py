@@ -126,6 +126,8 @@ def reg_time(data):
     
     if patternx:
         return patternx
+    elif pattern:
+        return pattern
     else:
         return "Wrong"
     
