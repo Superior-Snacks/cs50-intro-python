@@ -143,7 +143,7 @@ def switch_to_24hr(data):
         print("for strt")
         print(ob)
         if ob in ["am","AM","PM","pm"]:
-            print(f"i is {obi}")
+            print(f"i is {ob}")
             if ob in ["pm", "PM"]:
                 time = [ob - 1]
                 if ":" in time:
