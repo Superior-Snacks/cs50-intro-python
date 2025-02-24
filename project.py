@@ -168,6 +168,9 @@ def switch_to_24hr(data):
     print(solved)
     return solved
 
+def clean_24_hr(data):
+    ...
+
     
 
 if __name__ == "__main__":
