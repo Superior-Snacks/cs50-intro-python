@@ -115,6 +115,7 @@ def reg_estimate(data):
 def reg_day(data):
     week = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     day_format = data.split(" ")
+    print(day_format)
     return day_format
 
 #return time in form [00:00, 00:00]
