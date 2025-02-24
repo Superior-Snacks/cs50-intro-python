@@ -136,6 +136,7 @@ def reg_time(data):
 
 
 def switch_to_24hr(data):
+    data = tuple(item for item in time_tuple if item != None)
     solved = []
     print("start")
     for i in range(len(data)):
