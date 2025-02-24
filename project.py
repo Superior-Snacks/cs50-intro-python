@@ -151,9 +151,6 @@ def switch_to_24hr(data):
                     fin =f"{int(data[i - 2]) + 12}{time}"
                 else:
                     fin = f"{int(time) + 12}:00"
-                if fin == "24:00":
-                    solved.append("00:00")
-                else:
                     solved.append(fin)
                 print(f"add the pm{solved}")
             else:
@@ -162,7 +159,10 @@ def switch_to_24hr(data):
                     fin =f"{int(data[i-2])}{time}"
                 else:
                     fin = f"{int(time)}:00"
-                solved.append(fin)
+                if fin == "24:00":
+                    solved.append("00:00")
+                else:
+                    solved.append(fin)
                 print(f"add the am{solved}")
     print(solved)
     return solved
