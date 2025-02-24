@@ -102,7 +102,7 @@ def reg_estimate(data):
     if ps:
         hours_str = ps.group(1).strip()  # Extract the numeric part (group 1)
         hours = float(hours_str)
-        return "{:.2f}".format(hours)
+        return float("{:.2f}".format(hours))
     else:
         return "Wrong"
 
