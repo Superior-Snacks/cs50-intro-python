@@ -169,7 +169,6 @@ def switch_to_24hr(data):
     return solved
 
 def clean_24_hr(data):
-    print(data)
     solved = []
     i = 0
     while i < len(data) and len(solved) < 2:
@@ -178,17 +177,13 @@ def clean_24_hr(data):
             for k in range(len(data[i:])):
                 if data[k + i] not in [" ", "-"]:
                     temp += data[k + i]
-                    print(temp)
                 else:
-                    print("break found")
                     i = k + i
-                    print(f"I is {i}")
                     solved.append(temp)
                     break
             else:
                 solved.append(temp)
         i += 1
-
     return solved
 
 def is_int(x):
