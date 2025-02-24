@@ -178,12 +178,12 @@ def clean_24_hr(data):
             temp += data[i]
             print(temp)
 
-
+    i = 0
     while True:
         if int(data[i]):
             for k in range(len(data[i:])):
-                if data[k] not in [" ", "-"]:
-                    temp += data[k]
+                if data[i+k] not in [" ", "-"]:
+                    temp += data[i+k]
                     print(temp)
 
 
