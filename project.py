@@ -147,9 +147,9 @@ def switch_to_24hr(data):
             if ob in ["pm", "PM"]:
                 time = data[i - 1]
                 if ":" in time:
-                    fin =f"{int(data[i - 2]) + 5}{time}"
+                    fin =f"{int(data[i - 2]) + 12}{time}"
                 else:
-                    fin = f"{int(time) + 5}:00"
+                    fin = f"{int(time) + 12}:00"
             
                 solved.append(fin)
                 print(f"add the pm{solved}")
