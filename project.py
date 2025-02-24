@@ -118,7 +118,7 @@ def reg_day(data):
     day_format = re.split(r"[- ]+",data)
     for i in day_format:
         print(i)
-        if i.lower() in week:
+        if i[:2].lower() in week:
             solved.append(week.index(i))
             print(f"found {solved}")
     print(day_format)
