@@ -56,8 +56,12 @@ def sort_tasks():
     ...
 
 def view_tasks():
-    ...
+    table = texttable.Texttable()
+    table.header(["Header 1", "Header 2", "Header 3"])
+    table.add_row(["Row 1, Col 1", "Row 1, Col 2", "Row 1, Col 3"])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3"])
 
+    
 def planner_paramiter():
     ...
 
