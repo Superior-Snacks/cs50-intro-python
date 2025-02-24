@@ -161,6 +161,7 @@ def switch_to_24hr(data):
                     fin = f"{int(time) + 5}:00"
                 solved.append(fin)
                 print(f"add the am{solved}")
+    print(solved)
     return solved
 
     
