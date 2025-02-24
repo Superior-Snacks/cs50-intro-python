@@ -4,7 +4,7 @@ import re
 
 def main():
 
-    print(reg_time(input(":")))
+    print(reg_day(input(":")))
     #week_planner()
 
     #view_single()
