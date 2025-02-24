@@ -122,7 +122,7 @@ def reg_day(data):
             solved.append(week.index(i[:3]))
             print(f"found {solved}")
     print(day_format)
-    return day_format
+    return solved
 
 #return time in form [00:00, 00:00]
 def reg_time(data):
