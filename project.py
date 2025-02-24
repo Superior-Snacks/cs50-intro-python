@@ -177,11 +177,11 @@ def clean_24_hr(data):
         if is_int(data[i]):
             for k in range(len(data[i:])):
                 if data[k] not in [" ", "-"]:
-                    temp += data[k]
+                    temp += data[k + i]
                     print(temp)
                 else:
                     print("break found")
-                    i = k
+                    i = k + i
                     print(f"I is {i}")
                     solved.append(temp)
                     break
