@@ -131,7 +131,7 @@ def reg_time(data):
         return switch_to_24hr(patternx.groups())
     elif pattern:
         print("pattern")
-        return "piss"
+        return clean_24_hr(pattern.group())
     else:
         return "Wrong"
 
