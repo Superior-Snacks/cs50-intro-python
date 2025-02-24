@@ -139,12 +139,13 @@ def switch_to_24hr(data):
     solved = []
     print("start")
     for i in range(len(data)):
+        ob = data[i]
         print("for strt")
-        print(i)
-        if i in ["am","AM","PM","pm"]:
-            print(f"i is {i}")
-            if i in ["pm", "PM"]:
-                time = [i - 1]
+        print(ob)
+        if ob in ["am","AM","PM","pm"]:
+            print(f"i is {obi}")
+            if ob in ["pm", "PM"]:
+                time = [ob - 1]
                 if ":" in time:
                     time.split(":")
                     fin =time[0] + 5
