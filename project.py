@@ -98,7 +98,8 @@ def check_data(data):
 
 #retrun hours in form of 0.00
 def reg_estimate(data):
-    if re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s*(hours?|hrs?|HR|Hr|HRS|Hours)?$", data):
+    ps = re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s*(hours?|hrs?|HR|Hr|HRS|Hours)?$", data)
+    if ps:
         get = re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s", data)
         hours = float(get.group())
         return "{:.2f}".format(hours) 
