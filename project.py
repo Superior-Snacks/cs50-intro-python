@@ -193,6 +193,7 @@ def clean_24_hr(data):
 def is_int(x):
     try:
         int(x)
+        print(f"{x} is def a number")
         return True
     except ValueError:
         return False
