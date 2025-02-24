@@ -170,17 +170,9 @@ def switch_to_24hr(data):
 
 def clean_24_hr(data):
     print(data)
-    #data = tuple(item for item in data if item != None)
     solved = []
-    temp = ""
-    #for i in range(len(data)):
-    #    if data[i] not in [" ", "-"]:
-    #        temp += data[i]
-    #        print(temp)
-
-    i = -1
+    i = 0
     while True:
-        i += 1
         temp = ""
         if is_int(data[i]):
             for k in range(i, len(data)):
