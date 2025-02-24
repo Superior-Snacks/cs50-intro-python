@@ -148,11 +148,16 @@ def switch_to_24hr(data):
                 time = data[i - 1]
                 if ":" in time:
                     fin =f"{int(data[i - 2]) + 5}" + time
-                    solved.append(fin)
-                    print(f"add the sloved{solved}")
-                    print("sillty")
                 else:
                     fin = f"{int(time) + 5}:00"
+            
+                solved.append(fin)
+                print(f"add the {solved}")
+                print("sillty")
+            else:
+                time = data[i - 1]
+                if ":" in time:
+                    fin =f"{int(data[i-2]) + 5}:{time}"
     return solved
 
     
