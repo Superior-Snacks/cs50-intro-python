@@ -169,7 +169,11 @@ def switch_to_24hr(data):
     return solved
 
 def clean_24_hr(data):
-    ...
+    print(data)
+    data = tuple(item for item in data if item != None)
+    solved = []
+    print(data)
+
 
     
 
