@@ -176,8 +176,8 @@ def clean_24_hr(data):
         temp = ""
         if is_int(data[i]):
             for k in range(len(data[i:])):
-                if data[k] not in [" ", "-"]:
-                    temp += data[k]
+                if data[k + i] not in [" ", "-"]:
+                    temp += data[k + i]
                     print(temp)
                 else:
                     print("break found")
