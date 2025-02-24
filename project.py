@@ -135,12 +135,17 @@ def reg_time(data):
 
 
 def switch_to_24hr(data):
+    solved = []
     for i in range(data):
         if i in ["am","AM","PM","pm"]:
             if i in ["pm", "PM"]:
                 time = [i - 1]
                 if ":" in time:
-                    time
+                    time.split(":")
+                    fin =time[0] + 5
+                    fin ="{fin}" +":" + time[-1]
+                    solved.append(fin)
+
     
 
 if __name__ == "__main__":
