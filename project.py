@@ -174,7 +174,7 @@ def clean_24_hr(data):
     solved = []
     temp = ""
     for i in range(len(data)):
-        if i not in [" ", "-"]:
+        if data[i] not in [" ", "-"]:
             temp += data[i]
             print(temp)
     return solved
