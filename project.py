@@ -146,7 +146,7 @@ def switch_to_24hr(data):
                     fin =time[0] + 5
                     fin ="{fin}" +":" + time[-1]
                     solved.append(fin)
-                    print(solved)
+                    print(f"add the sloved{solved}")
                     print("sillty")
     return solved
 
