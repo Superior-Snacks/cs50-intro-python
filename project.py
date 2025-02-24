@@ -127,7 +127,7 @@ def reg_time(data):
     
     
     if patternx:
-        switch_to_24hr(patternx)
+        switch_to_24hr(patternx.groups(all))
         return patternx
     elif pattern:
         return pattern
