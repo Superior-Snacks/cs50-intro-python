@@ -120,7 +120,7 @@ def reg_day(data):
 #return time in form [00:00, 00:00]
 def reg_time(data):
     #00:00 - 00:00
-    pattern = re.match(r"^([01]?[0-9]|2[0-3])(:[0-5][0-9])?\s*(-?\s*([01]?[0-9]|2[0-3])(:[0-5][0-9])?)?$", data)
+    #pattern = re.match(r"^([01]?[0-9]|2[0-3])(:[0-5][0-9])?\s*(-?\s*([01]?[0-9]|2[0-3])(:[0-5][0-9])?)?$", data)
     #0:00 am - 00:00 pm
     patternx = re.match(r"^([0]?[1-9]|1[0-2])(:[0-5][0-9])?\s*(am|AM|pm|PM)\s*(-?\s*([0]?[1-9]|1[0-2])(:[0-5][0-9])?\s*(am|AM|pm|PM))?$", data)
     patternx.group
@@ -136,7 +136,7 @@ def reg_time(data):
 
 def switch_to_24hr(data):
     solved = []
-    for i in range(data):
+    for i in range(len(data)):
         if i in ["am","AM","PM","pm"]:
             if i in ["pm", "PM"]:
                 time = [i - 1]
