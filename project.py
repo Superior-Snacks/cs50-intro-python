@@ -189,6 +189,7 @@ def clean_24_hr(data):
                 else:
                     print("break found")
                     i = i+k
+                    solved.append(temp)
                     break
 
 
