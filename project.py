@@ -156,9 +156,9 @@ def switch_to_24hr(data):
             else:
                 time = data[i - 1]
                 if ":" in time:
-                    fin =f"{int(data[i-2]) + 5}{time}"
+                    fin =f"{int(data[i-2])}{time}"
                 else:
-                    fin = f"{int(time) + 5}:00"
+                    fin = f"{int(time)}:00"
                 solved.append(fin)
                 print(f"add the am{solved}")
     print(solved)
