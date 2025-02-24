@@ -196,7 +196,9 @@ def clean_24_hr(data):
                         False
             else:
                 solved.append(temp)
-
+        i += 1
+        if len(solved) == 2:
+            break
 
     return solved
 
