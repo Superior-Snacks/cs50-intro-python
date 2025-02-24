@@ -184,6 +184,7 @@ def clean_24_hr(data):
                     i = k
                     print(f"I is {i}")
                     solved.append(temp)
+                    break
             else:
                 solved.append(temp)
         i += 1
