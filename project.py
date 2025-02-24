@@ -4,7 +4,9 @@ import re
 
 def main():
 
-    print(reg_estimate(input(":")))
+
+    view_tasks()
+    #print(reg_estimate(input(":")))
     #week_planner()
 
     #view_single()
@@ -61,7 +63,7 @@ def view_tasks():
     table.add_row(["Row 1, Col 1", "Row 1, Col 2", "Row 1, Col 3"])
     table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3"])
 
-    
+
 def planner_paramiter():
     ...
 
