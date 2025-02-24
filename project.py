@@ -177,7 +177,7 @@ def clean_24_hr(data):
         if i not in [" ", "-"]:
             temp += data[i]
             print(temp)
-    print(data)
+    return solved
 
 
     
