@@ -191,6 +191,8 @@ def clean_24_hr(data):
                     print("break found")
                     i = i+k
                     solved.append(temp)
+                    if len(solved) == 2:
+                        False
                     break
 
 
