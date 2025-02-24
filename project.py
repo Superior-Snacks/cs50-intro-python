@@ -102,6 +102,7 @@ def reg_estimate(data):
     print(ps.group())
     if ps:
         get = re.match(r"^[0-9]{1,2}(\.[0-9]{0,2})?\s", data)
+        print(get)
         hours = float(get.group(0).strip())
         return "{:.2f}".format(hours) 
     else:
