@@ -196,6 +196,7 @@ def is_int(x):
         print(f"{x} is def a number")
         return True
     except ValueError:
+        print(f"{x} is def NOT a number")
         return False
     
 
