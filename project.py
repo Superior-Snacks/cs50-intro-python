@@ -100,7 +100,7 @@ def check_data(data):
 def reg_estimate(data):
     ps = re.match(r"^([0-9]{1,2}(\.[0-9]{0,2})?)\s*(hours?|hrs?|HR|Hr|HRS|Hours)?$", data, re.IGNORECASE)
     if ps:
-        hours_str = ps.group(1).strip()  # Extract the numeric part (group 1)
+        hours_str = ps.group(1).strip()
         hours = float(hours_str)
         return float("{:.2f}".format(hours))
     else:
