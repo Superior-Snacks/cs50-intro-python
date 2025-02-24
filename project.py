@@ -114,7 +114,7 @@ def reg_estimate(data):
 #return day in form of [1,2,3]
 def reg_day(data):
     solved =[]
-    week = ["Smon", "tue", "wed", "thu", "fri", "sat", "sun"]
+    week = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     day_format = re.split(r"[- ]+",data)
     for i in day_format:
         print(i)
