@@ -185,6 +185,10 @@ def clean_24_hr(data):
                 if data[i+k] not in [" ", "-"]:
                     temp += data[i+k]
                     print(temp)
+                else:
+                    print("break found")
+                    i = i+k
+                    break
 
 
     return solved
