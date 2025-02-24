@@ -140,6 +140,7 @@ def switch_to_24hr(data):
     print("start")
     for i in range(len(data)):
         print("for strt")
+        print(i)
         if i in ["am","AM","PM","pm"]:
             print(f"i is {i}")
             if i in ["pm", "PM"]:
