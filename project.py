@@ -62,6 +62,16 @@ def view_tasks():
     table.header(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
     table.add_row(["Row 1, Col 1", "Row 1, Col 2", "Row 1, Col 3", "", "", "", ""])
     table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
+    table.add_row(["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "", "", "", ""])
     print(table.draw())
 
 def planner_paramiter():
