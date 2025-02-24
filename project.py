@@ -172,7 +172,7 @@ def clean_24_hr(data):
     print(data)
     solved = []
     i = 0
-    while i < len(data):
+    while i < len(data) and len(solved) < 2:
         temp = ""
         if is_int(data[i]):
             for k in range(i, len(data)):
