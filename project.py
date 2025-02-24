@@ -138,7 +138,7 @@ def reg_time(data):
 def switch_to_24hr(data):
     solved = []
     print("start")
-    for i in range(data):
+    for i in range(len(data)):
         print("for strt")
         if i in ["am","AM","PM","pm"]:
             if i in ["pm", "PM"]:
