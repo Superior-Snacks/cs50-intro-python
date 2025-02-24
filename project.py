@@ -173,7 +173,7 @@ def clean_24_hr(data):
     data = tuple(item for item in data if item != None)
     solved = []
     temp = ""
-    for i in len(data):
+    for i in range[len(data)]:
         if i not in [" ", "-"]:
             temp += data[i]
             print(temp)
