@@ -54,8 +54,10 @@ def remove_task():
 def finnish_task():
     ...
 
+#add tasks to table
 def sort_tasks():
-    ...
+
+
 
 def view_tasks():
     table = texttable.Texttable()
