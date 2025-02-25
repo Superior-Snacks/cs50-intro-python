@@ -4,8 +4,8 @@ import re
 
 def main():
 
-
-    view_tasks()
+    sort_tasks()
+    #view_tasks()
     #print(reg_estimate(input(":")))
     #week_planner()
 
