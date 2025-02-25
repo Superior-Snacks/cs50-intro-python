@@ -62,6 +62,8 @@ def sort_tasks():
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
 
     while finnish == False:
+        planner_time
+        current_hour = []
         for i in data:
             time_check = i["time"][0].split(":")
             time_check = int(time_check[0])
