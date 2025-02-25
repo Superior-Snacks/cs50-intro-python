@@ -57,13 +57,14 @@ def finnish_task():
 #add tasks to table
 def sort_tasks():
     finnish = False
+    hour = 0
     data = load_data()
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
 
     while finnish == False:
-        planner_time
-        current_hour = []
+        planner_time = f"{hour}:00"
+        current_hour = [planner_time]
         for i in data:
             time_check = i["time"][0].split(":")
             time_check = int(time_check[0])
