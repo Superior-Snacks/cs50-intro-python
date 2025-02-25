@@ -64,7 +64,7 @@ def sort_tasks():
     while finnish == False:
         for i in data:
             time_check = i["time"][0].split(":")
-            time_check = time_check[0]
+            time_check = int(time_check[0])
             if time_check < 6:
                 print(f"task: {i["name"]}")
         finnish = True
