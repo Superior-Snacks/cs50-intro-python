@@ -12,3 +12,4 @@ tasks sorted by
 breyta estimate þannig 4 hr gefur
 
 breyta algo
+fara í gegn mán - sun
