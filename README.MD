@@ -7,3 +7,8 @@ tasks sorted by
 -tasks, sort(anyday,specfc day, anytime, specfk range)
 -decide freetime
 -time to compleet range estimate
+
+
+breyta estimate þannig 4 hr gefur
+
+breyta algo
