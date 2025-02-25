@@ -72,6 +72,7 @@ def sort_tasks():
                 current_hour[day_index + 1] = i["name"]
             #print(f"hour: {current_hour} task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
         print(current_hour)
+        table.add_row(current_hour)
         hour += 1
 
 
