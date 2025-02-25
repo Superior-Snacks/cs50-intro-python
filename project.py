@@ -63,7 +63,7 @@ def sort_tasks():
 
     while finnish == False:
         for i in data:
-            print(f"task: {i}")
+            print(f"task: {i["name"]}")
         finnish = True
 
 
