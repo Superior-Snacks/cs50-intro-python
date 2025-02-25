@@ -69,7 +69,7 @@ def sort_tasks():
             time_check = int(time_check[0])
             if time_check == hour:
                 day_index = i["day"][0]
-                current_hour[day_index + 1] = i["name"]
+                current_hour[day_index + 1] += i["name"]
             #print(f"hour: {current_hour} task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
         print(current_hour)
         table.add_row(current_hour)
