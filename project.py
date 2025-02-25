@@ -63,7 +63,7 @@ def sort_tasks():
 
     while hour < 25:
         planner_time = f"{hour}:00"
-        current_hour = [planner_time]
+        current_hour = [planner_time, "", "", "", "", "", "", ""]
         for i in data:
             time_check = i["time"][0].split(":")
             time_check = int(time_check[0])
