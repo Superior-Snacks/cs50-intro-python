@@ -61,7 +61,10 @@ def sort_tasks():
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
 
-    while finnish == False
+    while finnish == False:
+        for i in data:
+            print(f"task: {i}")
+        finnish = True
 
 
 def view_tasks():
