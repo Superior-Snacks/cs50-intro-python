@@ -69,7 +69,7 @@ def sort_tasks():
             time_check = int(time_check[0])
             if time_check == hour and hour < 6:
                 current_hour[i["day"][0]].replace(i["name"])
-            print(f"hour: {current_hour} task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
+            #print(f"hour: {current_hour} task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
         hour += 1
 
 
