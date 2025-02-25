@@ -62,7 +62,7 @@ def sort_tasks():
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
 
-    while finnish == False:
+    while hour < 25:
         planner_time = f"{hour}:00"
         current_hour = [planner_time]
         for i in data:
