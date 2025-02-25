@@ -56,7 +56,12 @@ def finnish_task():
 
 #add tasks to table
 def sort_tasks():
+    finnish = False
+    data = load_data()
+    table = texttable.Texttable()
+    table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
 
+    while finnish == False
 
 
 def view_tasks():
