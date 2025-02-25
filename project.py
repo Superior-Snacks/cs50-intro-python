@@ -68,9 +68,9 @@ def sort_tasks():
         for i in data:
             time_check = i["time"][0].split(":")
             time_check = int(time_check[0])
-            if time_check < 6:
-                print(f"task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
-        finnish = True
+            #if time_check < 6:
+            print(f"task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
+        hour += 1
 
 
 def time_check(data):
