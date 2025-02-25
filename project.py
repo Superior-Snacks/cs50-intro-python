@@ -66,7 +66,7 @@ def sort_tasks():
             time_check = i["time"][0].split(":")
             time_check = int(time_check[0])
             if time_check < 6:
-                print(f"task: {i["name"]}")
+                print(f"task: {i["name"]} time: {i["time"]}")
         finnish = True
 
 
