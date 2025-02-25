@@ -68,6 +68,9 @@ def sort_tasks():
             if time_check < 6:
                 print(f"task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
         finnish = True
+    
+    def time_compare(t1, t2):
+        ...
 
 
 def view_tasks():
