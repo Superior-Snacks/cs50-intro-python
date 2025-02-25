@@ -56,7 +56,6 @@ def finnish_task():
 
 #add tasks to table
 def sort_tasks():
-    finnish = False
     hour = 0
     data = load_data()
     table = texttable.Texttable()
