@@ -63,7 +63,7 @@ def switch_minutes(time):
 def switch_hour(min):
     hours = min // 60
     minutes = min % 60
-    return f"{hours}:{minutes}"
+    return "{:02d}:{:02d}".format(hours, minutes)
 
 def conflict_check(week, start, end):
     print(f"week {week}")
