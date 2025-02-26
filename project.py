@@ -88,6 +88,7 @@ def compare_time(data):
         stop = False
         print(F"current is {k}")
         if len(k["day"]) < 2:
+            print(f"this is suposed to be only monday {k}")
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][1])
             duration = int(float(k["estimate"])*60)
