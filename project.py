@@ -56,7 +56,8 @@ def remove_task():
 def finnish_task():
     ...
 def switch_minutes(time):
-    minutes = time
+    minutes = time.split(":")
+    minutes = int(minutes[0])*60 + minutes 
     return minutes
 
 
