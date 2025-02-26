@@ -73,13 +73,13 @@ def sort_days():
     table = texttable.Texttable()
     week = {"mon":[], "tue":[], "wed":[], "thu":[], "fri":[], "sat":[], "sun":[]}
     while x == True:
+        x == False
         day = 0
         current_day = []
         for i in data:
             if day in i["day"]:
                 current_day.append(i)
                 print(i)
-        x == False
         compare_time(current_day)
 
 
