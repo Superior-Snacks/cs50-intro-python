@@ -130,7 +130,7 @@ def sort_days():
                 current_day.append(i)
                 print(i)
         x = False
-        compare_time(current_day)
+        print(compare_time(current_day))
 
 
 
