@@ -61,7 +61,7 @@ def switch_minutes(time):
     print("switch")
     return minutes
 
-def conflict_check
+def conflict_check(data, start, end)
 
 def compare_time(data):
     print("so we begin")
