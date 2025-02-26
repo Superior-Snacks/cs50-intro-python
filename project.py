@@ -72,6 +72,7 @@ def compare_time(data):
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][1])
             est = k["estimate"]
+            print(k["name"])
             print(start_min)
             print(end_min)
             print(est)
