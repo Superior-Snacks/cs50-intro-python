@@ -63,7 +63,8 @@ def switch_minutes(time):
 
 def conflict_check(data, start, end):
     for task in data:
-        
+        placed_start = switch_minutes(task[])
+        placed_end = switch_minutes(task[])
 
 def compare_time(data):
     print("so we begin")
