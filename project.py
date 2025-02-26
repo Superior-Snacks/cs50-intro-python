@@ -87,7 +87,7 @@ def compare_time(data):
             print(duration)
             while start_min + duration < end_min:
                 for i in minutes_taken:
-                    if i[0][0] > start_min + duration and i[0][1] < start_min
+                    if i[0][0] > start_min + duration and i[0][1] < start_min:
 
                 start_min += 1
                 
