@@ -64,6 +64,7 @@ def compare_time(data):
     print("so we begin")
     print(data)
     ...
+    #sort important day
     for k in data:
         if len(i["day"]) < 2:
             ...
