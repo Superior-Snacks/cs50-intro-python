@@ -65,6 +65,10 @@ def conflict_check(data, start, end):
     for task in data:
         placed_start = switch_minutes(task["time"][0])
         placed_end = switch_minutes(task["time"][1])
+        if (start < placed_end and placed_start < end):
+            print("conflict")
+            return True
+    return False
 
 def compare_time(data):
     print("so we begin")
