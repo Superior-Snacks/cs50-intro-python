@@ -61,10 +61,12 @@ def switch_minutes(time):
     print("switch")
     return minutes
 
+def co
+
 def compare_time(data):
     print("so we begin")
     print(data)
-    minutes_taken = [{[360, 420], "GYM"}]
+    minutes_taken = [[[360, 420], "GYM"]]
 
     #sort important day
     for k in data:
@@ -76,9 +78,12 @@ def compare_time(data):
             print(start_min)
             print(end_min)
             print(duration)
-            
+            while start_min + duration < end_min:
+                for i in minutes_taken:
+                    if i[0][0] > start_min + duration and i[0][1] < start_min
 
-            ...
+                start_min += 1
+                
     #sort important time
     for i in data:
         if len(i["time"]) != 2:
