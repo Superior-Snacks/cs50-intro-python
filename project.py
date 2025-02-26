@@ -90,8 +90,8 @@ def compare_time(data):
                     week.append({
                         "name": k["name"],
                         "description": k["description"],
-                        "start": start_min,
-                        "end": start_min + duration
+                        "start": switch_hour(start_min),
+                        "end": switch_hour(start_min + duration)
                     })
                 start_min += 1
 
