@@ -78,8 +78,8 @@ def sort_days():
             if day in i["day"]:
                 current_day.append(i)
                 print(i)
-        compare_time(current_day)
         False
+        compare_time(current_day)
 
 
 
