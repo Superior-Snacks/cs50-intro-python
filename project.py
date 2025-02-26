@@ -55,6 +55,10 @@ def remove_task():
 
 def finnish_task():
     ...
+def switch_minutes(time):
+
+
+
 
 def sort_days():
     data = load_data()
