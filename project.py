@@ -69,7 +69,7 @@ def compare_time(data):
     for k in data:
         if len(k["day"]) < 2:
             start_min = switch_minutes(k["time"][0])
-            end_min = switch_minutes(k["time"][0])
+            end_min = switch_minutes(k["time"][1])
             print(start_min)
             print(end_min)
 
