@@ -101,13 +101,6 @@ def sort_tasks():
     print(table.draw())
 
 
-def time_check(data):
-    ...
-
-def time_compare(t1, t2):
-    ...
-
-
 def view_tasks():
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
