@@ -64,6 +64,10 @@ def compare_time(data):
     print("so we begin")
     print(data)
     ...
+    #sort important
+    for i in data:
+        if len(i["time"]) != 2:
+            
 
 
 #go throug day by day, compare time slots
