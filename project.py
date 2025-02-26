@@ -86,6 +86,7 @@ def compare_time(data):
     print("import")
     for k in data:
         stop = False
+        print(F"current is {k}")
         if len(k["day"]) < 2:
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][1])
