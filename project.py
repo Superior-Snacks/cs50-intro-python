@@ -113,6 +113,7 @@ def compare_time(data):
                     "end": switch_hour(start_min + duration)
                 })
             start_min += 1
+    return week
 
 
 #go throug day by day, compare time slots
