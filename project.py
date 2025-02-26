@@ -4,7 +4,7 @@ import re
 
 def main():
 
-    switch_minutes("2:00")
+    switch_minutes("2:30")
     #sort_days()
     #sort_tasks()
     #view_tasks()
@@ -57,8 +57,8 @@ def finnish_task():
     ...
 def switch_minutes(time):
     minutes = time.split(":")
-    minutes = int(minutes[0])*60 + minutes[1] 
-    return minutes
+    minutes = int(minutes[0])*60 + int(minutes[1]) 
+    return print(minutes)
 
 def compare_time():
     ...
