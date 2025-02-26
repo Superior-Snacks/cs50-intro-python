@@ -64,6 +64,7 @@ def switch_minutes(time):
 def switch_hour(min):
     hours = min // 60
     minutes = min % 60
+    return f"{hours}:{minutes}"
 
 def conflict_check(data, start, end):
     for task in data:
