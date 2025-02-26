@@ -93,12 +93,12 @@ def compare_time(data):
                         "start": start_min,
                         "end": start_min + duration
                     })
+                start_min += 1
     for i in data:
         start_min = switch_minutes(i["time"][0])
         end_min = switch_minutes(i["time"][1])
         duration = int(float(i["estimate"])*60)
 
-                start_min += 1
     #sort important time
     for i in data:
         if len(i["time"]) != 2:
