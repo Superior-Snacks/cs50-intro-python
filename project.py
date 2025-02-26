@@ -4,7 +4,7 @@ import re
 
 def main():
 
-    #switch_minutes("2:30")
+    print(switch_minutes("6:00"))
     sort_days()
     #sort_tasks()
     #view_tasks()
@@ -64,18 +64,19 @@ def switch_minutes(time):
 def compare_time(data):
     print("so we begin")
     print(data)
-    minutes_taken = []
+    minutes_taken = [{[360, 420], "GYM"}]
 
     #sort important day
     for k in data:
         if len(k["day"]) < 2:
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][1])
-            est = float(k["estimate"])*60
+            duration = int(float(k["estimate"])*60)
             print(k["name"])
             print(start_min)
             print(end_min)
-            print(est)
+            print(duration)
+            
 
             ...
     #sort important time
