@@ -54,6 +54,8 @@ def remove_task():
 def finnish_task():
     ...
 
+def sort_days():
+
 #add tasks to table
 #prolly decrepid
 def sort_tasks():
