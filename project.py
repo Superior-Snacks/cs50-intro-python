@@ -59,6 +59,7 @@ def finnish_task():
 def sort_days():
     data = load_data()
     table = texttable.Texttable()
+    week = {"mon":[], "tue":[], "wed":[], "thu":[], "fri":[], "sat":[], "sun":[]}
 
 
 
