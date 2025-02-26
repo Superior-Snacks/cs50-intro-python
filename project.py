@@ -119,8 +119,8 @@ def compare_time(data):
         while (start_min + duration < end_min) and stop == False:
             if not conflict_check(week, start_min, start_min + duration):
                 week.append({
-                    "name": k["name"],
-                    "description": k["description"],
+                    "name": i["name"],
+                    "description": i["description"],
                     "start": switch_hour(start_min),
                     "end": switch_hour(start_min + duration)
                 })
