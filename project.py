@@ -107,7 +107,7 @@ def compare_time(data):
         end_min = switch_minutes(i["time"][1])
         duration = int(float(i["estimate"])*60)
         while start_min + duration < end_min:
-            if not conflict_check(data, start_min, start_min + duration):
+            if not conflict_check(week, start_min, start_min + duration):
                 week.append({
                     "name": k["name"],
                     "description": k["description"],
