@@ -63,10 +63,14 @@ def switch_minutes(time):
 def compare_time(data):
     print("so we begin")
     print(data)
-    
+    minutes_taken = []
+
     #sort important day
     for k in data:
-        if len(i["day"]) < 2:
+        if len(k["day"]) < 2:
+            start_min = switch_minutes(k["time"][0])
+            end_min = switch_minutes(k["time"][0])
+
             ...
     #sort important time
     for i in data:
