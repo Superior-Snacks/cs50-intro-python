@@ -65,13 +65,14 @@ def switch_hour(min):
     minutes = min % 60
     return f"{hours}:{minutes}"
 
-def conflict_check(data, start, end):
-    for task in data:
-        placed_start = switch_minutes(task["start"])
-        placed_end = switch_minutes(task["end"])
-        if (start < placed_end and placed_start < end):
-            print("conflict")
-            return True
+def conflict_check(week, start, end):
+    if len(week) != 0:
+        for task in week:
+            placed_start = switch_minutes(task["start"])
+            placed_end = switch_minutes(task["end"])
+            if (start < placed_end and placed_start < end):
+                print("conflict")
+                return True
     return False
 
 def compare_time(data):
