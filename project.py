@@ -3,7 +3,7 @@ import texttable
 import re
 
 def main():
-    print(switch_minutes("6:00"))
+    #print(switch_minutes("6:00"))
     sort_days()
     #sort_tasks()
     #view_tasks()
@@ -66,7 +66,8 @@ def switch_hour(min):
     return f"{hours}:{minutes}"
 
 def conflict_check(week, start, end):
-    if len(week) != 0:
+    print(f"week {week}")
+    if not len(week) == 0:
         for task in week:
             placed_start = switch_minutes(task["start"])
             placed_end = switch_minutes(task["end"])
