@@ -71,7 +71,7 @@ def sort_tasks():
     hour = 0
     data = load_data()
     table = texttable.Texttable()
-    table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
+    table.header(["time", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
 
     while hour < 25:
         planner_time = f"{hour}:00"
