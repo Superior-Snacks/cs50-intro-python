@@ -67,13 +67,14 @@ def switch_hour(min):
 
 def conflict_check(week, start, end):
     print(f"week {week}")
-    if not len(week) == 0:
-        for task in week:
-            placed_start = switch_minutes(task["start"])
-            placed_end = switch_minutes(task["end"])
-            if (start < placed_end and placed_start < end):
-                print("conflict")
-                return True
+    if not week:
+        return False
+    for task in week:
+        placed_start = switch_minutes(task["start"])
+        placed_end = switch_minutes(task["end"])
+        if (start < placed_end and placed_start < end):
+            print("conflict")
+            return True
     print("not a conflict")
     return False
 
