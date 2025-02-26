@@ -73,7 +73,7 @@ def conflict_check(data, start, end):
 def compare_time(data):
     print("so we begin")
     print(data)
-    minutes_taken = [[[360, 420], "GYM"]]
+    week = []
 
     #sort important day
     for k in data:
@@ -87,7 +87,12 @@ def compare_time(data):
             print(duration)
             while start_min + duration < end_min:
                 if not conflict_check(data, start_min, start_min + duration):
-                    ...
+                    week.append({
+                        "name": k["name"],
+                        "start": start_min,
+                        "end": start_min + duration
+                    })
+
 
                 start_min += 1
                 
