@@ -74,6 +74,7 @@ def conflict_check(week, start, end):
             if (start < placed_end and placed_start < end):
                 print("conflict")
                 return True
+    print("not a conflict")
     return False
 
 def compare_time(data):
@@ -82,7 +83,9 @@ def compare_time(data):
     week = []
 
     #sort important day
+    print("import")
     for k in data:
+        stop = False
         if len(k["day"]) < 2:
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][1])
@@ -91,7 +94,8 @@ def compare_time(data):
             print(start_min)
             print(end_min)
             print(duration)
-            while start_min + duration < end_min:
+            print(f"comine {start_min + duration}")
+            while (start_min + duration <= end_min) and stop == False:
                 if not conflict_check(week, start_min, start_min + duration):
                     week.append({
                         "name": k["name"],
@@ -99,14 +103,17 @@ def compare_time(data):
                         "start": switch_hour(start_min),
                         "end": switch_hour(start_min + duration)
                     })
+                    stop = True
                 start_min += 1
 
     #same but for rest of day
+    print("rest")
     for i in data:
+        stop = False
         start_min = switch_minutes(i["time"][0])
         end_min = switch_minutes(i["time"][1])
         duration = int(float(i["estimate"])*60)
-        while start_min + duration < end_min:
+        while (start_min + duration < end_min) and stop == False:
             if not conflict_check(week, start_min, start_min + duration):
                 week.append({
                     "name": k["name"],
@@ -114,6 +121,7 @@ def compare_time(data):
                     "start": switch_hour(start_min),
                     "end": switch_hour(start_min + duration)
                 })
+                stop = True
             start_min += 1
     return week
 
