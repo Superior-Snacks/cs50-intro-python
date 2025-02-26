@@ -68,17 +68,18 @@ def compare_time(data):
 
 #go throug day by day, compare time slots
 def sort_days():
+    x = True
     data = load_data()
     table = texttable.Texttable()
     week = {"mon":[], "tue":[], "wed":[], "thu":[], "fri":[], "sat":[], "sun":[]}
-    while True:
+    while x == True:
         day = 0
         current_day = []
         for i in data:
             if day in i["day"]:
                 current_day.append(i)
                 print(i)
-        False
+        x == False
         compare_time(current_day)
 
 
