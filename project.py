@@ -136,7 +136,7 @@ def sort_days():
     data = load_data()
     table = texttable.Texttable()
     week = {"mon":[], "tue":[], "wed":[], "thu":[], "fri":[], "sat":[], "sun":[]}
-    while x == True:
+    for temp in range(7):
         day = 0
         current_day = []
         for i in data:
@@ -144,6 +144,7 @@ def sort_days():
                 current_day.append(i)
                 print(i)
         x = False
+        day += 1
         print(f"this is monday{compare_time(current_day)}")
 
 
