@@ -60,15 +60,26 @@ def switch_minutes(time):
     minutes = int(minutes[0])*60 + int(minutes[1]) 
     return print(minutes)
 
-def compare_time():
+def compare_time(data):
+    print("so we begin")
+    print(data)
     ...
 
 
-
+#go throug day by day, compare time slots
 def sort_days():
     data = load_data()
     table = texttable.Texttable()
     week = {"mon":[], "tue":[], "wed":[], "thu":[], "fri":[], "sat":[], "sun":[]}
+    while True:
+        day = 0
+        current_day = []
+        for i in data:
+            if day in i["day"]:
+                current_day.append(i)
+                print(i)
+        compare_time(current_day)
+
 
 
 
