@@ -70,6 +70,8 @@ def compare_time(data):
         if len(k["day"]) < 2:
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][0])
+            print(start_min)
+            print(end_min)
 
             ...
     #sort important time
