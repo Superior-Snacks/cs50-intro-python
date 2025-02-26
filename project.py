@@ -55,6 +55,8 @@ def finnish_task():
     ...
 
 def sort_days():
+    data = load_data()
+    table = texttable.Texttable()
 
 #add tasks to table
 #prolly decrepid
