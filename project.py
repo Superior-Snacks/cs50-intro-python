@@ -55,6 +55,7 @@ def finnish_task():
     ...
 
 #add tasks to table
+#prolly decrepid
 def sort_tasks():
     hour = 0
     data = load_data()
