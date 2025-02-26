@@ -63,8 +63,8 @@ def switch_minutes(time):
 
 def conflict_check(data, start, end):
     for task in data:
-        placed_start = switch_minutes(task["time"][0])
-        placed_end = switch_minutes(task["time"][1])
+        placed_start = switch_minutes(task["start"])
+        placed_end = switch_minutes(task["end"])
         if (start < placed_end and placed_start < end):
             print("conflict")
             return True
@@ -86,7 +86,7 @@ def compare_time(data):
             print(end_min)
             print(duration)
             while start_min + duration < end_min:
-                if not conflict_check(data, start_min, start_min + duration):
+                if not conflict_check(week, start_min, start_min + duration):
                     week.append({
                         "name": k["name"],
                         "description": k["description"],
@@ -109,12 +109,6 @@ def compare_time(data):
                     "end": start_min + duration
                 })
             start_min += 1
-
-    #sort important time
-    for i in data:
-        if len(i["time"]) != 2:
-            ...
-
 
 
 #go throug day by day, compare time slots
