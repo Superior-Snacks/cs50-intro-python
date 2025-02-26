@@ -3,9 +3,8 @@ import texttable
 import re
 
 def main():
-    print(switch_hour(130))
-    #print(switch_minutes("6:00"))
-    #sort_days()
+    print(switch_minutes("6:00"))
+    sort_days()
     #sort_tasks()
     #view_tasks()
     #print(reg_estimate(input(":")))
