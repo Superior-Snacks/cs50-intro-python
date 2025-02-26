@@ -145,7 +145,7 @@ def sort_days():
                 print(i)
         x = False
         day += 1
-        print(f"this is monday{compare_time(current_day)}")
+        print(f"this is day {day} : {compare_time(current_day)}")
 
 
 
