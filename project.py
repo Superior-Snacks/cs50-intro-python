@@ -4,7 +4,9 @@ import re
 
 def main():
 
-    sort_tasks()
+
+    sort_days()
+    #sort_tasks()
     #view_tasks()
     #print(reg_estimate(input(":")))
     #week_planner()
@@ -60,7 +62,7 @@ def sort_days():
 
 
 
-    
+
 
 #add tasks to table
 #prolly decrepid
