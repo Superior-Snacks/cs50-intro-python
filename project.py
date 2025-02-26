@@ -4,8 +4,8 @@ import re
 
 def main():
 
-    switch_minutes("2:30")
-    #sort_days()
+    #switch_minutes("2:30")
+    sort_days()
     #sort_tasks()
     #view_tasks()
     #print(reg_estimate(input(":")))
