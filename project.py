@@ -60,6 +60,9 @@ def switch_minutes(time):
     minutes = int(minutes[0])*60 + minutes 
     return minutes
 
+def compare_time():
+    ...
+
 
 
 def sort_days():
