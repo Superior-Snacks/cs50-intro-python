@@ -94,10 +94,21 @@ def compare_time(data):
                         "end": start_min + duration
                     })
                 start_min += 1
+
+    #same but for rest of day
     for i in data:
         start_min = switch_minutes(i["time"][0])
         end_min = switch_minutes(i["time"][1])
         duration = int(float(i["estimate"])*60)
+        while start_min + duration < end_min:
+            if not conflict_check(data, start_min, start_min + duration):
+                week.append({
+                    "name": k["name"],
+                    "description": k["description"],
+                    "start": start_min,
+                    "end": start_min + duration
+                })
+            start_min += 1
 
     #sort important time
     for i in data:
