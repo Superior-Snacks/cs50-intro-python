@@ -61,6 +61,8 @@ def switch_minutes(time):
     print("switch")
     return minutes
 
+def switch_hour(min):
+
 def conflict_check(data, start, end):
     for task in data:
         placed_start = switch_minutes(task["start"])
