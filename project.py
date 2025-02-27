@@ -144,6 +144,8 @@ def sort_days():
                 current_day.append(i)
                 print(i)
         day += 1
+
+        
         print(f"this is day {day} : {compare_time(current_day)}")
         #check if already placed on another day
         #save global
