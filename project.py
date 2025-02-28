@@ -149,7 +149,7 @@ def sort_days():
 
         log.append(day)
         print(f"this is day {day} : {compare_time(current_day)}")
-        week.append(compare_time(current_day))
+        week.append(compare_time(current_day, week))
         #check if already placed on another day
         #save global
         #switch to sql maybe
