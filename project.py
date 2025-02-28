@@ -138,16 +138,16 @@ def sort_days():
     data = load_data()
     table = texttable.Texttable()
     week = []
+    day = 0
     for temp in range(7):
-        day = 0
         current_day = []
         for i in data:
             if day in i["day"]:
                 current_day.append(i)
                 print(i)
-            day += 1
+        day += 1
 
-            log.append(day)
+        log.append(day)
         print(f"this is day {day} : {compare_time(current_day)}")
         week.append(compare_time(current_day))
         #check if already placed on another day
