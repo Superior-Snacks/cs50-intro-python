@@ -162,6 +162,10 @@ def sort_days():
     print(week)
     print("okokok")
     print(done)
+    place_tasks(week)
+
+# name, description start mintue end minute
+def place_tasks(week):
         
 
 
