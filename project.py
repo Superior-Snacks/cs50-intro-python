@@ -127,6 +127,7 @@ def compare_time(data):
                 })
                 stop = True
             start_min += 1
+    print("endEND")
     return week
 
 
@@ -144,7 +145,6 @@ def sort_days():
                 current_day.append(i)
                 print(i)
         day += 1
-        print("should be done")
 
 
         print(f"this is day {day} : {compare_time(current_day)}")
