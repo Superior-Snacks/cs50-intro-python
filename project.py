@@ -151,7 +151,8 @@ def sort_days():
                 print(i)
         sorted = compare_time(current_day)
         week.append(sorted[0])
-        done.append(sorted[1])
+        done.extend(sorted[1])
+        day += 1
         #check if already placed on another day
         #save global
         #switch to sql maybe
@@ -159,6 +160,8 @@ def sort_days():
     print(log)
     print("proolly end")
     print(week)
+    print("okokok")
+    print(done)
         
 
 
