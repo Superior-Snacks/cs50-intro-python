@@ -145,7 +145,7 @@ def sort_days():
             if day in i["day"]:
                 current_day.append(i)
                 print(i)
-        day += 1
+            day += 1
 
         log.append(day)
         print(f"this is day {day} : {compare_time(current_day)}")
