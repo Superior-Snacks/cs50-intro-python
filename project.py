@@ -153,8 +153,10 @@ def sort_days():
         #check if already placed on another day
         #save global
         #switch to sql maybe
+    print(len(week))
     print(log)
     print("proolly end")
+    print(week)
         
 
 
