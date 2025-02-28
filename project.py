@@ -168,6 +168,7 @@ def sort_days():
 # list for each day then iterate down
 def place_tasks(week):
     table = {"mon":[], "tue":[], "wed":[], "thu":[], "fri":[], "sat":[], "sun":[]}
+    ...
         
 
 
