@@ -165,6 +165,7 @@ def sort_days():
     place_tasks(week)
 
 # name, description start mintue end minute
+# list for each day then iterate down
 def place_tasks(week):
         
 
