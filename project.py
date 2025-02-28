@@ -131,13 +131,14 @@ def compare_time(data):
                 stop = True
             start_min += 1
     print("endEND")
-    return week, done
+    return [week, done]
 
 
 #go throug day by day, compare time slots
 def sort_days():
     x = True
     log =[]
+    done = []
     data = load_data()
     table = texttable.Texttable()
     week = []
@@ -145,11 +146,12 @@ def sort_days():
     for temp in range(7):
         current_day = []
         for i in data:
-            if day in i["day"]:
+            if (day in i["day"]) and (i not in done):
                 current_day.append(i)
                 print(i)
-        print(f"this is day {day} : {compare_time(current_day)}")
-        week.append(compare_time(current_day))
+        sorted = compare_time(current_day)
+        week.append(sorted[0])
+        done.append(sorted[1])
         #check if already placed on another day
         #save global
         #switch to sql maybe
