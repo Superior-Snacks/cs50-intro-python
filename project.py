@@ -82,6 +82,7 @@ def compare_time(data):
     print("so we begin")
     print(data)
     week = []
+    done = []
 
     #sort important day
     print("import")
@@ -106,6 +107,7 @@ def compare_time(data):
                         "start": switch_hour(start_min),
                         "end": switch_hour(start_min + duration)
                     })
+                    done.append(k)
                     stop = True
                 start_min += 1
 
@@ -125,10 +127,11 @@ def compare_time(data):
                     "start": switch_hour(start_min),
                     "end": switch_hour(start_min + duration)
                 })
+                done.append(i)
                 stop = True
             start_min += 1
     print("endEND")
-    return week
+    return week, done
 
 
 #go throug day by day, compare time slots
