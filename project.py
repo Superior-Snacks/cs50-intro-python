@@ -54,6 +54,10 @@ def remove_task():
     ...
 
 
+def new_week():
+    ...
+
+
 def switch_minutes(time):
     minutes = time.split(":")
     minutes = int(minutes[0])*60 + int(minutes[1])
