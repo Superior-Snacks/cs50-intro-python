@@ -236,11 +236,8 @@ def reg_day(data):
     week = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     day_format = re.split(r"[- ]+",data)
     for i in day_format:
-        print(i[:3])
         if i[:3].lower() in week:
             solved.append(week.index(i[:3]))
-            print(f"found {solved}")
-    print(day_format)
     return solved
 
 #return time in form [00:00, 00:00]
@@ -251,10 +248,8 @@ def reg_time(data):
     patternx = re.match(r"^([0]?[1-9]|1[0-2])(:[0-5][0-9])?\s*(am|AM|pm|PM)\s*(-?\s*([0]?[1-9]|1[0-2])(:[0-5][0-9])?\s*(am|AM|pm|PM))?$", data)
     
     if patternx:
-        print("patternx")
         return switch_to_24hr(patternx.groups())
     elif pattern:
-        print("pattern")
         return clean_24_hr(pattern.group())
     else:
         return "Wrong"
@@ -263,13 +258,9 @@ def reg_time(data):
 def switch_to_24hr(data):
     data = tuple(item for item in data if item != None)
     solved = []
-    print("start")
     for i in range(len(data)):
         ob = data[i]
-        print("for strt")
-        print(ob)
         if ob in ["am","AM","PM","pm"]:
-            print(f"i is {ob}")
             if ob in ["pm", "PM"]:
                 time = data[i - 1]
                 if ":" in time:
@@ -277,7 +268,6 @@ def switch_to_24hr(data):
                 else:
                     fin = f"{int(time) + 12}:00"
                     solved.append(fin)
-                print(f"add the pm{solved}")
             else:
                 time = data[i - 1]
                 if ":" in time:
@@ -288,12 +278,9 @@ def switch_to_24hr(data):
                     solved.append("00:00")
                 else:
                     solved.append(fin)
-                print(f"add the am{solved}")
-    print(solved)
     return solved
 
 def clean_24_hr(data):
-    print(data)
     solved = []
     i = 0
     while i < len(data) and len(solved) < 2:
@@ -302,11 +289,8 @@ def clean_24_hr(data):
             for k in range(len(data[i:])):
                 if data[k + i] not in [" ", "-"]:
                     temp += data[k + i]
-                    print(temp)
                 else:
-                    print("break found")
                     i = k + i
-                    print(f"I is {i}")
                     solved.append(temp)
                     break
             else:
@@ -317,10 +301,8 @@ def clean_24_hr(data):
 def is_int(x):
     try:
         int(x)
-        print(f"{x} is def a number")
         return True
     except ValueError:
-        print(f"{x} is def NOT a number")
         return False
     
 
