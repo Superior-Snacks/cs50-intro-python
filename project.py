@@ -173,6 +173,7 @@ def place_tasks(week):
         formed_day =[]
         sorted_schedule = sorted(day, key=lambda x: x['start']) #where have you been all my life
         print(sorted_schedule)
+        placement = [["",""] for x in range(24 * 4)] #premade
         #first round!
         if not day:
             for hour in range(24):
@@ -184,6 +185,8 @@ def place_tasks(week):
         for task in sorted_schedule:
             task_start = min_15_format(task["start"])
             task_end = min_15_format(task["end"])
+            for i in range(task_start, task_end):
+                placement[i][1] = task["name"]
 
 def min_15_format(data):
     hr, min = data.split(":")
