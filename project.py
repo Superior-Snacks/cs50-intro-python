@@ -179,6 +179,7 @@ def place_tasks(week):
 
 def min_15_format(data):
     hr, min = data.split(":")
+    return (int(hr) * 4) + (int(min) // 15)
         
 
 
