@@ -162,7 +162,7 @@ def sort_days():
     #print(week)
     #print("okokok")
     #print(done)
-    place_tasks(week)
+    view_tasks(place_tasks(week))
 
 # name, description start mintue end minute
 # list for each day then iterate down
