@@ -190,7 +190,7 @@ def place_tasks(week):
                 placement[i][1] = task["name"]
 
         for hour in range(24):
-            for minutesx in range(4):
+            for minutes in range(4):
                 minutest = minutes * 15
                 index = (hour * 4) + minutes
                 print(f"hour: {hour}, minutes: {minutest}, index: {index}")
@@ -235,11 +235,12 @@ def sort_tasks():
 
     print(table.draw())
 
-
+#+++IDIDIDOT
 def view_tasks(week):
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
     for i in week:
+        print(i)
         table.add_row(i)
     print(table.draw())
 
