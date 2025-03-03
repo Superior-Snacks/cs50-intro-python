@@ -170,8 +170,15 @@ def place_tasks(week):
     formed_time = []
 
     for day in week:
+        formed_day =[]
         sorted_schedule = sorted(day, key=lambda x: x['start']) #where have you been all my life
         print(sorted_schedule)
+        #first round!
+        if not day:
+            for hour in range(24):
+                for minutes in range(4):
+                    formed_day.append([f"{hour:02d}:{minutes:02d}", ""])
+
     
         for task in day:
             task_start = min_15_format(task["start"])
