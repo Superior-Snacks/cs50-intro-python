@@ -246,7 +246,9 @@ def view_tasks(week):
     else:
         return
 
-    
+    for index in range (num_time_slots):
+        row=[week[0][index][0]]
+
     print(table.draw())
 
 def planner_paramiter():
