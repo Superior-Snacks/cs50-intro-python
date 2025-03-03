@@ -56,7 +56,6 @@ def finnish_task():
 def switch_minutes(time):
     minutes = time.split(":")
     minutes = int(minutes[0])*60 + int(minutes[1])
-    print("switch")
     return minutes
 
 
@@ -67,7 +66,6 @@ def switch_hour(min):
 
 
 def conflict_check(week, start, end):
-    print(f"week {week}")
     if not week:
         return False
     for task in week:
