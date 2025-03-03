@@ -131,7 +131,6 @@ def sort_days():
         for i in data:
             if (day in i["day"]) and (i not in done):
                 current_day.append(i)
-                print(i)
         sorted = compare_time(current_day)
         week.append(sorted[0])
         done.extend(sorted[1])
