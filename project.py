@@ -172,7 +172,8 @@ def place_tasks(week):
     for day in week:
         sorted_schedule = sorted(day, key=lambda x: x['start']) #where have you been all my life
         print(sorted_schedule)
-
+    
+        for task in day
         
 
 
