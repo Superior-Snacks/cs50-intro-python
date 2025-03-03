@@ -248,6 +248,9 @@ def view_tasks(week):
 
     for index in range (num_time_slots):
         row=[week[0][index][0]]
+        for day in week:
+            row.append(day[index[1]])
+        table.add_row(row)
 
     print(table.draw())
 
