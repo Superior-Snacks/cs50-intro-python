@@ -202,36 +202,6 @@ def place_tasks(week):
 def min_15_format(data):
     hr, min = data.split(":")
     return (int(hr) * 4) + (int(min) // 15)
-        
-
-
-
-
-
-
-#add tasks to table
-#prolly decrepid
-def sort_tasks():
-    hour = 0
-    data = load_data()
-    table = texttable.Texttable()
-    table.header(["time", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
-
-    while hour < 25:
-        planner_time = f"{hour}:00"
-        current_hour = [planner_time, "", "", "", "", "", "", ""]
-        for i in data:
-            time_check = i["time"][0].split(":")
-            time_check = int(time_check[0])
-            if time_check == hour:
-                day_index = i["day"][0]
-                current_hour[day_index + 1] += i["name"]
-            #print(f"hour: {current_hour} task: {i["name"]} time: {i["time"]} estimate: {i["estimate"]}")
-        print(current_hour)
-        table.add_row(current_hour)
-        hour += 1
-
-    print(table.draw())
 
 
 def view_tasks(week):
