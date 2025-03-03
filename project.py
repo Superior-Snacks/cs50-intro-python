@@ -243,10 +243,10 @@ def view_tasks(week):
     
     transposed_week = list(zip(*week))
 
-    for index in transposed_week:
-        row=[index[0][0]]
-        for day in week:
-            row.append(day[1])
+    for time_slot in transposed_week:
+        row = [time_slot[0][0]]
+        for day_data in time_slot:
+            row.append(day_data[1])
         table.add_row(row)
 
     print(table.draw())
