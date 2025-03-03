@@ -158,11 +158,11 @@ def sort_days():
         #switch to sql maybe
     #print(len(week))
     #print(log)
-    #print("proolly end")
+    print("proolly end")
     #print(week)
     #print("okokok")
     #print(done)
-    #place_tasks(week)
+    place_tasks(week)
 
 # name, description start mintue end minute
 # list for each day then iterate down
