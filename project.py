@@ -179,6 +179,7 @@ def place_tasks(week):
                 for minutes in range(4):
                     formed_day.append([f"{hour:02d}:{minutes:02d}", ""])
             formed_time.append(formed_day)
+            continue #not it
 
     
         for task in day:
