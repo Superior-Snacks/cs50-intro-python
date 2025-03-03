@@ -49,21 +49,26 @@ def add_task():
         loaded.append(data)
         json.dump(loaded, add)
 
+
 def remove_task():
     ...
 
 def finnish_task():
     ...
+
+
 def switch_minutes(time):
     minutes = time.split(":")
     minutes = int(minutes[0])*60 + int(minutes[1])
     print("switch")
     return minutes
 
+
 def switch_hour(min):
     hours = min // 60
     minutes = min % 60
     return "{:02d}:{:02d}".format(hours, minutes)
+
 
 def conflict_check(week, start, end):
     print(f"week {week}")
