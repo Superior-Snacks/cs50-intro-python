@@ -3,18 +3,12 @@ import texttable
 import re
 
 def main():
-    #print(switch_minutes("6:00"))
-    sort_days()
-    #sort_tasks()
-    #view_tasks()
-    #print(reg_estimate(input(":")))
-    #week_planner()
-
-    #view_single()
+    week_planner()
 
 
 def week_planner():
     while True:
+        sort_days()
         print("soon: add routine, move task, save and exit")
         print("add[1] remove[2] complete[3]")
 
