@@ -191,6 +191,8 @@ def place_tasks(week):
 
         for hour in range(24):
             for minutes in range(4):
+                minutes = minutes * 15
+                index = (hour * 4) + minutes
 
 
 def min_15_format(data):
