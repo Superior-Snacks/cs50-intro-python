@@ -188,6 +188,9 @@ def place_tasks(week):
             for i in range(task_start, task_end):
                 placement[i][1] = task["name"]
 
+        for hour in range(24):
+            for minutes in range(4)
+
 def min_15_format(data):
     hr, min = data.split(":")
     return (int(hr) * 4) + (int(min) // 15)
