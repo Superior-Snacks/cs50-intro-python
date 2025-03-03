@@ -12,7 +12,7 @@ def week_planner():
     while True:
         sort_days() #display
         print("soon: add routine, move task, save and exit")
-        print("add[1] remove[2] complete[3]")
+        print("add[1] finnish[2] reset_week[3] exit[4]")
 
         action = int(input(": "))
         if action == 1:
@@ -22,6 +22,9 @@ def week_planner():
             remove_task()
             sort_days()
         if action == 3:
+            new_week()
+            sort_days()
+        if action == 4:
             break
 
 def add_task():
