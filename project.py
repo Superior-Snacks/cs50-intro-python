@@ -181,8 +181,7 @@ def place_tasks(week):
             formed_time.append(formed_day)
             continue #not it
 
-    
-        for task in day:
+        for task in sorted_schedule:
             task_start = min_15_format(task["start"])
             task_end = min_15_format(task["end"])
 
