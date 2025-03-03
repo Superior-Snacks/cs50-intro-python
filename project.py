@@ -168,7 +168,11 @@ def sort_days():
 # list for each day then iterate down
 def place_tasks(week):
     formed_time = []
-    
+
+    for day in week:
+
+        sorted_schedule = sorted(day, key=lambda x: x['start'])
+
         
 
 
