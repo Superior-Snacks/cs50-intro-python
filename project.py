@@ -156,13 +156,13 @@ def sort_days():
         #check if already placed on another day
         #save global
         #switch to sql maybe
-    print(len(week))
-    print(log)
-    print("proolly end")
-    print(week)
-    print("okokok")
-    print(done)
-    place_tasks(week)
+    #print(len(week))
+    #print(log)
+    #print("proolly end")
+    #print(week)
+    #print("okokok")
+    #print(done)
+    #place_tasks(week)
 
 # name, description start mintue end minute
 # list for each day then iterate down
@@ -172,6 +172,7 @@ def place_tasks(week):
     for day in week:
 
         sorted_schedule = sorted(day, key=lambda x: x['start'])
+        print(sorted_schedule)
 
         
 
