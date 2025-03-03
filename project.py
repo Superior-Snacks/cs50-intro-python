@@ -99,9 +99,7 @@ def compare_time(data):
                 start_min += 1
 
     #same but for rest of day
-    print("rest")
     for i in data:
-        print(F"current is {i}")
         stop = False
         start_min = switch_minutes(i["time"][0])
         end_min = switch_minutes(i["time"][1])
@@ -117,7 +115,6 @@ def compare_time(data):
                 done.append(i)
                 stop = True
             start_min += 1
-    print("endEND")
     return [week, done]
 
 
