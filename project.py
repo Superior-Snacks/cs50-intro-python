@@ -231,11 +231,9 @@ def sort_tasks():
         table.add_row(current_hour)
         hour += 1
 
-
-
     print(table.draw())
 
-#+++IDIDIDOT
+
 def view_tasks(week):
     print(week)
     table = texttable.Texttable()
@@ -251,13 +249,6 @@ def view_tasks(week):
 
     print(table.draw())
 
-def planner_paramiter():
-    ...
-
-def view_single():
-    with open("calander.json", 'r') as see:
-        loaded_data = json.load(see)
-        print(loaded_data)
 
 def load_data():
     whole_plan = []
