@@ -244,9 +244,9 @@ def view_tasks(week):
     transposed_week = list(zip(*week))
 
     for index in transposed_week:
-        row=[week[0][index][0]]
+        row=[index[0][0]]
         for day in week:
-            row.append(day[index][1])
+            row.append(day[1])
         table.add_row(row)
 
     print(table.draw())
