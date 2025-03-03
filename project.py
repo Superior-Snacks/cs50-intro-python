@@ -237,13 +237,16 @@ def sort_tasks():
 
 #+++IDIDIDOT
 def view_tasks(week):
+    print(week)
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
-    for day_schedule in week:
-        row = [day_schedule[0][0]]
-        for time_slot in day_schedule:
-            row.append(time_slot[1])
-        table.add_row(row)
+    
+    if week:
+        num_time_slots = len(week[0])
+    else:
+        return
+
+    
     print(table.draw())
 
 def planner_paramiter():
