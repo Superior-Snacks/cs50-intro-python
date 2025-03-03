@@ -174,10 +174,11 @@ def place_tasks(week):
         print(sorted_schedule)
     
         for task in day:
-            task_start = switch_minutes(task["start"])
-            task_end = switch_minutes(task["end"])
+            task_start = min_15_format(task["start"])
+            task_end = min_15_format(task["end"])
 
 def min_15_format(data):
+    hr, min = data.split(":")
         
 
 
