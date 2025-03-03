@@ -176,6 +176,8 @@ def place_tasks(week):
         for task in day:
             task_start = switch_minutes(task["start"])
             task_end = switch_minutes(task["end"])
+
+def min_15_format(data):
         
 
 
