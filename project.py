@@ -235,27 +235,11 @@ def sort_tasks():
     print(table.draw())
 
 
-def view_tasks():
+def view_tasks(week):
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
-    table.add_row(["6:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["7:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["8:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["9:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["10:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["11:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["12:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["13:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["14:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["15:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["16:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["18:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["19:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["20:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["21:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["22:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["23:00","task", "task", "task", "task", "task", "task", "task"])
-    table.add_row(["24:00","task", "task", "task", "task", "task", "task", "task"])
+    for i in week:
+        table.add_row(i)
     print(table.draw())
 
 def planner_paramiter():
