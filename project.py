@@ -77,25 +77,15 @@ def conflict_check(week, start, end):
 
 
 def compare_time(data):
-    print("so we begin")
-    print(data)
     week = []
     done = []
     #sort important day
-    print("import")
     for k in data:
         stop = False
-        print(F"current is {k}")
         if len(k["day"]) < 2:
-            print(f"this is suposed to be only monday {k}")
             start_min = switch_minutes(k["time"][0])
             end_min = switch_minutes(k["time"][1])
             duration = int(float(k["estimate"])*60)
-            print(k["name"])
-            print(start_min)
-            print(end_min)
-            print(duration)
-            print(f"comine {start_min + duration}")
             while (start_min + duration <= end_min) and stop == False:
                 if not conflict_check(week, start_min, start_min + duration):
                     week.append({
