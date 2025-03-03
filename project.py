@@ -3,12 +3,14 @@ import texttable
 import re
 
 def main():
+    """start function"""
     week_planner()
 
 
 def week_planner():
+    """main function"""
     while True:
-        sort_days()
+        sort_days() #display
         print("soon: add routine, move task, save and exit")
         print("add[1] remove[2] complete[3]")
 
@@ -23,6 +25,7 @@ def week_planner():
             break
 
 def add_task():
+    """add task"""
     print("-----------------------")
     print("add task, specify name and description")
     name = input("name: ")
