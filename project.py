@@ -176,7 +176,6 @@ def min_15_format(data):
 
 
 def view_tasks(week):
-    print(week)
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
     
