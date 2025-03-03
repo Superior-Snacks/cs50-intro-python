@@ -164,7 +164,6 @@ def place_tasks(week):
             for minute_interval in range(4):
                 minutes = minute_interval * 15
                 index = (hour * 4) + minute_interval
-                print(f"hour: {hour}, minutes: {minutes}, index: {index}")
                 formed_day.append([f"{hour:02d}:{minutes:02d}", placement[index][1]])
         
         formed_time.append(formed_day)
