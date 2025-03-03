@@ -24,6 +24,7 @@ def week_planner():
             sort_days()
         if action == 2:
             remove_task()
+            sort_days()
         if action == 3:
             break
 
