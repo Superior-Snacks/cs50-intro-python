@@ -190,11 +190,11 @@ def place_tasks(week):
                 placement[i][1] = task["name"]
 
         for hour in range(24):
-            for minutes in range(4):
-                minutes = minutes * 15
+            for minutesx in range(4):
+                minutest = minutes * 15
                 index = (hour * 4) + minutes
-                print(f"hour: {hour}, minutes: {minutes}, index: {index}")
-                formed_day.append([f"{hour:02d}:{minutes:02d}", placement[index][1]])
+                print(f"hour: {hour}, minutes: {minutest}, index: {index}")
+                formed_day.append([f"{hour:02d}:{minutest:02d}", placement[index][1]])
         
         formed_time.append(formed_day)
     return formed_time
