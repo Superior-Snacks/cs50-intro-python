@@ -21,6 +21,7 @@ def week_planner():
         action = int(input(": "))
         if action == 1:
             add_task()
+            sort_days()
         if action == 2:
             remove_task()
         if action == 3:
