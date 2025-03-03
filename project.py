@@ -55,6 +55,9 @@ def add_task():
 #finnish task
 def remove_task():
     ...
+    name = input("name: ")
+    day = input("day: ")
+    time = input("time: ")
 
 
 def new_week():
