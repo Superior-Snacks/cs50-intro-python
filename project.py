@@ -173,7 +173,9 @@ def place_tasks(week):
         sorted_schedule = sorted(day, key=lambda x: x['start']) #where have you been all my life
         print(sorted_schedule)
     
-        for task in day
+        for task in day:
+            task_start = switch_minutes(task["start"])
+            task_end = switch_minutes(task["end"])
         
 
 
