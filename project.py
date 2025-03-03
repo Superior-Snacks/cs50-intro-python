@@ -241,10 +241,7 @@ def view_tasks(week):
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
     
-    if week:
-        num_time_slots = len(week[0])
-    else:
-        return
+    transposed_week = list(zip(*week))
 
     for index in range (num_time_slots):
         row=[week[0][index][0]]
