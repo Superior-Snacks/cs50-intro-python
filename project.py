@@ -196,7 +196,7 @@ def place_tasks(week):
                 formed_day.append([f"{hour:02d}:{minutes:02d}", placement[index][1]])
         
         formed_time.append(formed_day)
-
+    return formed_time
 
 def min_15_format(data):
     hr, min = data.split(":")
