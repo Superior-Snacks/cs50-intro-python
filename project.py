@@ -78,12 +78,12 @@ def conflict_check(week, start, end):
     print("not a conflict")
     return False
 
+
 def compare_time(data):
     print("so we begin")
     print(data)
     week = []
     done = []
-
     #sort important day
     print("import")
     for k in data:
@@ -134,7 +134,6 @@ def compare_time(data):
     return [week, done]
 
 
-#go throug day by day, compare time slots
 def sort_days():
     x = True
     log =[]
@@ -164,8 +163,7 @@ def sort_days():
     #print(done)
     view_tasks(place_tasks(week))
 
-# name, description start mintue end minute
-# list for each day then iterate down
+
 def place_tasks(week):
     formed_time = []
 
@@ -198,6 +196,7 @@ def place_tasks(week):
         
         formed_time.append(formed_day)
     return formed_time
+
 
 def min_15_format(data):
     hr, min = data.split(":")
