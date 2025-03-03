@@ -144,7 +144,6 @@ def place_tasks(week):
     for day in week:
         formed_day =[]
         sorted_schedule = sorted(day, key=lambda x: x['start']) #where have you been all my life
-        print(sorted_schedule)
         placement = [["",""] for x in range(24 * 4)] #premade
         #first round!
         if not day:
