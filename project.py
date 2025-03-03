@@ -178,6 +178,7 @@ def place_tasks(week):
         if not day:
             for hour in range(24):
                 for minutes in range(4):
+                    minutes = minutes * 15
                     formed_day.append([f"{hour:02d}:{minutes:02d}", ""])
             formed_time.append(formed_day)
             continue #not it
@@ -189,7 +190,8 @@ def place_tasks(week):
                 placement[i][1] = task["name"]
 
         for hour in range(24):
-            for minutes in range(4)
+            for minutes in range(4):
+
 
 def min_15_format(data):
     hr, min = data.split(":")
