@@ -135,15 +135,6 @@ def sort_days():
         week.append(sorted[0])
         done.extend(sorted[1])
         day += 1
-        #check if already placed on another day
-        #save global
-        #switch to sql maybe
-    #print(len(week))
-    #print(log)
-    print("proolly end")
-    #print(week)
-    #print("okokok")
-    #print(done)
     view_tasks(place_tasks(week))
 
 
