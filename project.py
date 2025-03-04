@@ -120,12 +120,10 @@ def conflict_check(week, start, end):
 def compare_time(data):
     week = []
     done = []
-    #sort important day
+    #sort important day first
     sorted_data = sorted(data, key=lambda t: len(t["day"]))
 
-    #same but for rest of day
     for task in sorted_data:
-        
         start_min = switch_minutes(task["time"][0])
         end_min = switch_minutes(task["time"][1])
         duration = int(float(task["estimate"])*60)
