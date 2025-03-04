@@ -134,11 +134,11 @@ def compare_time(data):
 
     #same but for rest of day
     for i in data:
-        stop = False
+        
         start_min = switch_minutes(i["time"][0])
         end_min = switch_minutes(i["time"][1])
         duration = int(float(i["estimate"])*60)
-        while (start_min + duration <= end_min) and stop == False:
+        while (start_min + duration <= end_min):
             if not conflict_check(week, start_min, start_min + duration):
                 week.append({
                     "name": i["name"],
@@ -147,7 +147,7 @@ def compare_time(data):
                     "end": switch_hour(start_min + duration)
                 })
                 done.append(i)
-                stop = True
+                break
             start_min += 15
     return [week, done]
 
