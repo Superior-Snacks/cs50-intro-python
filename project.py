@@ -41,6 +41,9 @@ def add_task():
         "time": reg_time(time)
     }
     
+    if not check_data(data):
+        return print("error")
+    
     loaded = load_data()
     with open("calander.json", 'w') as add:
         loaded.append(data)
