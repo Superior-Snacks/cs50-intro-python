@@ -12,7 +12,6 @@ def week_planner():
     """main function"""
     while True:
         sort_days() #display
-        print("soon: add routine, move task, save and exit")
         print("add[1] finnish[2] reset_week[3] exit[4]")
 
         action = int(input(": "))
