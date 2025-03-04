@@ -58,7 +58,7 @@ def remove_task():
     time = reg_time(input("time: "))
     print(time)
     for i in data:
-        if (day in i["day"]) and (i["name"] == name) and (time in i["time"]):
+        if (day[0] in i["day"]) and (i["name"] == name) and (time[0] in i["time"]):
             data.remove(i)
             with open("calander.json", 'w') as add:
                 json.dump(data, add)
