@@ -8,8 +8,8 @@ def main():
     week_planner()
 
 
+#main view loop
 def week_planner():
-    """main function"""
     while True:
         sort_days() #display
         print("add[1] finnish[2] reset_week[3] exit[4]")
@@ -53,16 +53,16 @@ def add_task():
         json.dump(loaded, add)
 
 
+#remove task from database
 def remove_task():
     data = load_data()
     name = input("name: ")
     day = reg_day(input("day: "))
-    print(day)
     time = reg_time(input("time: "))
-    print(time)
+
     for i in data:
         if (day[0] in i["day"]) and (i["name"] == name) and within_time(time, i):
-            data.remove(i)
+            data.remove(i) #task found and removed
             with open("calander.json", 'w') as add:
                 json.dump(data, add)
             return print("task removed")
