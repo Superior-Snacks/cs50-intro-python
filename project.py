@@ -27,13 +27,11 @@ def week_planner():
 def add_task():
     """add task"""
     print("-----------------------")
-    print("add task, specify name and description")
     name = input("name: ")
     description = input("description: ")
-    estimate = input("estimated length 0.0hr:")
-    print("give range or spesific time and day")
-    day = input("day mon - tue or any: ")
-    time = input("write time in 00:00 format or give a range 00:00 - 00:00")
+    estimate = input("estimated length 0.0hr: ")
+    day = input("days: ")
+    time = input("time range: ")
 
     data = {
         "name": name,
