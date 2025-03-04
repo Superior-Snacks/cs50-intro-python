@@ -4,7 +4,7 @@ import re
 
 
 def main():
-    """start function"""
+    #start the program
     week_planner()
 
 
