@@ -24,6 +24,7 @@ def week_planner():
         if action == 4:
             break
 
+
 def add_task():
     """add task"""
     print("-----------------------")
@@ -40,7 +41,7 @@ def add_task():
         "day": reg_day(day),
         "time": reg_time(time)
     }
-    
+
     if not check_data(data):
         return print("error")
     
@@ -67,7 +68,6 @@ def remove_task():
     return print("error task not found")
 
 
-
 def new_week():
     data = []
     with open("calander.json", 'w') as add:
@@ -87,7 +87,6 @@ def within_time(time, check):
         return True
     return False
     
-
 
 def switch_minutes(time):
     minutes = time.split(":")
@@ -256,6 +255,7 @@ def check_data(data):
     
     return x
 
+
 #retrun hours in form of 0.00
 def reg_estimate(data):
     ps = re.match(r"^([0-9]{1,2}(\.[0-9]{0,2})?)\s*(hours?|hrs?|HR|Hr|HRS|Hours)?$", data, re.IGNORECASE)
@@ -266,6 +266,7 @@ def reg_estimate(data):
     else:
         return "Wrong"
 
+
 #return day in form of [1,2,3]
 def reg_day(data):
     solved =[]
@@ -275,6 +276,7 @@ def reg_day(data):
         if i[:3].lower() in week:
             solved.append(week.index(i[:3]))
     return solved
+
 
 #return time in form [00:00, 00:00]
 def reg_time(data):
@@ -316,6 +318,7 @@ def switch_to_24hr(data):
                     solved.append(fin)
     return solved
 
+
 def clean_24_hr(data):
     solved = []
     i = 0
@@ -333,6 +336,7 @@ def clean_24_hr(data):
                 solved.append(temp)
         i += 1
     return solved
+
 
 def is_int(x):
     try:
