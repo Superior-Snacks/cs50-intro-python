@@ -69,10 +69,11 @@ def remove_task():
 
 
 def new_week():
+    data = []
     with open("calander.json", 'w') as add:
         json.dump(data, add)
 
-        
+
 def within_time(time, check):
     inp = switch_minutes(time[0])
     if len(check["time"]) == 2:
