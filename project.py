@@ -75,6 +75,7 @@ def new_week():
         json.dump(data, add)
 
 
+#check if given time is within bounds for removal valitadtion
 def within_time(time, check):
     inp = switch_minutes(time[0])
     if len(check["time"]) == 2:
