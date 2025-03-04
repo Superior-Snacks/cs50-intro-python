@@ -2,6 +2,8 @@ import json
 import texttable
 import re
 
+
+#fix time single
 def main():
     """start function"""
     week_planner()
@@ -71,12 +73,13 @@ def new_week():
     ...
 
 def within_time(time, check):
-    inp = switch_minutes(time)
-    if len(check["time"]) == 1:
-        start, finnish = switch_minutes(check["time"])
+    inp = switch_minutes(time[0])
+    if len(check["time"]) == 2:
+        start = switch_minutes(check["time"][0])
+        finnish = switch_minutes(check["time"][1])
     else:
-        start = switch_minutes(check["time"])
-        finnish = int(check["estimate"]) * 60
+        start = switch_minutes(check["time"][0])
+        finnish = float(check["estimate"]) * 60
 
     if start <= inp <= finnish:
         return True
