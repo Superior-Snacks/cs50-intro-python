@@ -117,7 +117,7 @@ def compare_time(data):
     sorted_data = sorted(data, key=lambda t: len(t["day"]))
 
     #same but for rest of day
-    for i in sorted_data:
+    for task in sorted_data:
         
         start_min = switch_minutes(i["time"][0])
         end_min = switch_minutes(i["time"][1])
