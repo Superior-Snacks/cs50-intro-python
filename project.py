@@ -148,7 +148,7 @@ def compare_time(data):
                 })
                 done.append(i)
                 stop = True
-            start_min += 1
+            start_min += 15
     return [week, done]
 
 
