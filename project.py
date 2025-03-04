@@ -51,7 +51,6 @@ def add_task():
         json.dump(loaded, add)
 
 
-#finnish task
 def remove_task():
     data = load_data()
     name = input("name: ")
