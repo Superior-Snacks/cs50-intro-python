@@ -25,8 +25,8 @@ def week_planner():
             break
 
 
+#get new task add to database
 def add_task():
-    """add task"""
     print("-----------------------")
     name = input("name: ")
     description = input("description: ")
