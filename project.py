@@ -90,18 +90,21 @@ def within_time(time, check):
     return False
     
 
+#swiches 00:00 time to minutes from midnight
 def switch_minutes(time):
     minutes = time.split(":")
     minutes = int(minutes[0])*60 + int(minutes[1])
     return minutes
 
 
+#swiches minutes from midnight back to 00:00 format
 def switch_hour(min):
     hours = min // 60
     minutes = min % 60
     return "{:02d}:{:02d}".format(hours, minutes)
 
 
+#checks if task is in conflict returns false if all is good (sorry)
 def conflict_check(week, start, end):
     if not week:
         return False
@@ -113,6 +116,7 @@ def conflict_check(week, start, end):
     return False
 
 
+#sorts tasks and resolve time conflicts within a day
 def compare_time(data):
     week = []
     done = []
