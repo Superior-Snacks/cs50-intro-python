@@ -54,7 +54,9 @@ def remove_task():
     data = load_data()
     name = input("name: ")
     day = reg_day(input("day: "))
+    print(day)
     time = reg_time(input("time: "))
+    print(time)
     for i in data:
         if i["day"] == day and i["name"] == name and i["time"] == time:
             data.remove(i)
