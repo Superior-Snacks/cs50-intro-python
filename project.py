@@ -42,9 +42,11 @@ def add_task():
         "time": reg_time(time)
     }
 
-    if not check_data(data): #check if data correct
+    #check if data correct
+    if not check_data(data):
         return print("error")
     
+    #load data add and save new task
     loaded = load_data()
     with open("calander.json", 'w') as add:
         loaded.append(data)
