@@ -64,7 +64,7 @@ def remove_task():
             with open("calander.json", 'w') as add:
                 json.dump(data, add)
             return print("task removed")
-
+    return print("error task not found")
 
 
 
