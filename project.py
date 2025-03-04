@@ -311,6 +311,7 @@ def switch_to_24hr(data):
     return solved
 
 
+#fix
 def clean_24_hr(data):
     solved = []
     i = 0
@@ -330,6 +331,7 @@ def clean_24_hr(data):
     return solved
 
 
+#just a lill helper
 def is_int(x):
     try:
         int(x)
