@@ -214,7 +214,7 @@ def view_tasks(week):
     print(table.draw())
 
 
-#function to load data
+#function get the database
 def load_data():
     whole_plan = []
     try:
@@ -225,6 +225,7 @@ def load_data():
         return whole_plan
 
 
+#makes sure data is porperly formated
 def check_data(data):
     x = True
     if len(data["name"]) > 20:
@@ -283,6 +284,7 @@ def reg_time(data):
         return "Wrong"
 
 
+#fixes amero time
 def switch_to_24hr(data):
     data = tuple(item for item in data if item != None)
     solved = []
