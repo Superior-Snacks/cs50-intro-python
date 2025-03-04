@@ -59,7 +59,6 @@ def remove_task():
     name = input("name: ")
     day = reg_day(input("day: "))
     time = reg_time(input("time: "))
-
     for i in data:
         if (day[0] in i["day"]) and (i["name"] == name) and within_time(time, i):
             data.remove(i) #task found and removed
@@ -69,6 +68,7 @@ def remove_task():
     return print("error task not found")
 
 
+#replace current database with an empty list
 def new_week():
     data = []
     with open("calander.json", 'w') as add:
