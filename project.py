@@ -42,7 +42,7 @@ def add_task():
         "time": reg_time(time)
     }
 
-    if not check_data(data):
+    if not check_data(data): #check if data correct
         return print("error")
     
     loaded = load_data()
