@@ -141,6 +141,7 @@ def compare_time(data):
     return [week, done]
 
 
+#sorts tasks by the day and excludes tasks previously sorted
 def sort_days():
     done = []
     data = load_data()
