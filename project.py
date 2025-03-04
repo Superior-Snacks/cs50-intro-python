@@ -214,6 +214,7 @@ def view_tasks(week):
     print(table.draw())
 
 
+#function to load data
 def load_data():
     whole_plan = []
     try:
