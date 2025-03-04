@@ -114,23 +114,6 @@ def compare_time(data):
     week = []
     done = []
     #sort important day
-    for k in data:
-        stop = False
-        if len(k["day"]) < 2:
-            start_min = switch_minutes(k["time"][0])
-            end_min = switch_minutes(k["time"][1])
-            duration = int(float(k["estimate"])*60)
-            while (start_min + duration <= end_min) and stop == False:
-                if not conflict_check(week, start_min, start_min + duration):
-                    week.append({
-                        "name": k["name"],
-                        "description": k["description"],
-                        "start": switch_hour(start_min),
-                        "end": switch_hour(start_min + duration)
-                    })
-                    done.append(k)
-                    stop = True
-                start_min += 1
 
     #same but for rest of day
     for i in data:
