@@ -3,7 +3,6 @@ import texttable
 import re
 
 
-#fix time single
 def main():
     """start function"""
     week_planner()
