@@ -63,6 +63,7 @@ def remove_task():
             data.remove(i)
             with open("calander.json", 'w') as add:
                 json.dump(data, add)
+            return print("task removed")
 
 
 
