@@ -119,9 +119,9 @@ def compare_time(data):
     #same but for rest of day
     for task in sorted_data:
         
-        start_min = switch_minutes(i["time"][0])
-        end_min = switch_minutes(i["time"][1])
-        duration = int(float(i["estimate"])*60)
+        start_min = switch_minutes(task["time"][0])
+        end_min = switch_minutes(task["time"][1])
+        duration = int(float(task["estimate"])*60)
         while (start_min + duration <= end_min):
             if not conflict_check(week, start_min, start_min + duration):
                 week.append({
@@ -130,7 +130,7 @@ def compare_time(data):
                     "start": switch_hour(start_min),
                     "end": switch_hour(start_min + duration)
                 })
-                done.append(i)
+                done.append(task)
                 break
             start_min += 15
     return [week, done]
