@@ -159,6 +159,7 @@ def sort_days():
     view_tasks(place_tasks(week))
 
 
+#places tasks on a 15 timeslot in format for table
 def place_tasks(week):
     formed_time = []
 
@@ -191,11 +192,13 @@ def place_tasks(week):
     return formed_time
 
 
+#convert to 15 min format
 def min_15_format(data):
     hr, min = data.split(":")
     return (int(hr) * 4) + (int(min) // 15)
 
 
+#display week
 def view_tasks(week):
     table = texttable.Texttable()
     table.header(["time","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
