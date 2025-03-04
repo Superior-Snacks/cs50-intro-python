@@ -59,7 +59,7 @@ def remove_task():
     day = reg_day(input("day: "))
     time = reg_time(input("time: "))
     for i in data:
-        if 
+        if i["day"] == day and i["name"] == name and i["time"] == time:
 
 
 
