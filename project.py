@@ -85,7 +85,7 @@ def within_time(time, check):
         start = switch_minutes(check["time"][0])
         finnish = float(check["estimate"]) * 60
 
-    if start <= inp <= finnish:
+    if start <= inp <= finnish: #check if in range
         return True
     return False
     
