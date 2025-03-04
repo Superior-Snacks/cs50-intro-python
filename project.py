@@ -154,10 +154,8 @@ def compare_time(data):
 
 def sort_days():
     x = True
-    log =[]
     done = []
     data = load_data()
-    table = texttable.Texttable()
     week = []
     day = 0
     for temp in range(7):
