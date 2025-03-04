@@ -54,10 +54,14 @@ def add_task():
 
 #finnish task
 def remove_task():
-    ...
+    data = load_data()
     name = input("name: ")
-    day = input("day: ")
-    time = input("time: ")
+    day = reg_day(input("day: "))
+    time = reg_time(input("time: "))
+    for i in data:
+        if 
+
+
 
 
 def new_week():
