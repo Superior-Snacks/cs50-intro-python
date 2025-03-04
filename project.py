@@ -153,7 +153,6 @@ def compare_time(data):
 
 
 def sort_days():
-    x = True
     done = []
     data = load_data()
     week = []
